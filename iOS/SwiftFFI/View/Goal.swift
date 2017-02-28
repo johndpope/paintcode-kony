@@ -3,7 +3,7 @@
 //  SwiftFFI
 //
 //  Created by Fernando Fernandes on 2/28/17.
-//  Copyright © 2017 Sicredi. All rights reserved.
+//  Copyright © 2017 singledev. All rights reserved.
 //
 
 import UIKit
@@ -29,7 +29,7 @@ import UIKit
     }
     
     override func draw(_ rect: CGRect) {
-        SicrediStyleKit.drawGoal(
+        StyleKit.drawGoal(
             frame: rect,
             goalPercentTextSize: textSize,
             goalPercentageStrokeSize: strokeSize,

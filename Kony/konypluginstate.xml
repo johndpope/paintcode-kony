@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="pluginstate">
+	<item value="true" key="KonyPaintCode.balckberrybuild"/>
 	<item value="false" key="KonyPaintCode.apppropmodified"/>
+	<item value="true" key="KonyPaintCode.j2mebuild"/>
+	<item value="true" key="KonyPaintCode.winmobilebuild"/>
 </section>

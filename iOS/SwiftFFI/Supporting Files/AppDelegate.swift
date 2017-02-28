@@ -3,7 +3,7 @@
 //  SwiftFFI
 //
 //  Created by Fernando Fernandes on 2/27/17.
-//  Copyright © 2017 Sicredi. All rights reserved.
+//  Copyright © 2017 singledev. All rights reserved.
 //
 
 import UIKit

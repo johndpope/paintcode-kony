@@ -3,7 +3,7 @@
 //  SwiftFFI
 //
 //  Created by Fernando Fernandes on 28/02/17.
-//  Copyright © 2017 Sicredi. All rights reserved.
+//  Copyright © 2017 singledev. All rights reserved.
 //
 
 #import "FFIWrapper.h"
@@ -18,7 +18,7 @@
                        progress:(CGFloat)progress {
     
     CGSize size = CGSizeMake(width, height);
-    UIImage *goalImage = [SicrediStyleKit imageOfGoalWithImageSize:size
+    UIImage *goalImage = [StyleKit imageOfGoalWithImageSize:size
                                                goalPercentTextSize:textSize
                                           goalPercentageStrokeSize:strokeSize
                                                       goalProgress:progress];

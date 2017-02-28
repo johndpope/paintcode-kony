@@ -1,1 +1,1 @@
-        var GoalForm;
+        var GoalIcon;

@@ -1,97 +1,24 @@
-14:22:33,597  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:27:22,763  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:30:24,721  INFO JettyLOG:32 - jetty-6.1.11
-14:30:25,331  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:30:25,333  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:30:25,639 DEBUG DCFilter:139 - Loading deafult log init handler
-14:30:25,652 DEBUG DCFilter:143 - NDC Filter initialized
-14:30:26,116  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:30:26,176  INFO JettyLOG:32 - Started {}
-14:30:26,177  INFO JettyLOG:33 - SelectChannelConnector@0.0.0.0:8888
-14:30:26,230  INFO JettyLOG:32 - Started {}
-14:30:26,230  INFO JettyLOG:33 - SslSocketConnector@0.0.0.0:8443
-14:31:15,928  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:31:16,915  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:31:17,682  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:31:18,509  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:35:08,787  INFO JettyLOG:32 - jetty-6.1.11
-14:35:09,005  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:35:09,006  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:35:09,489 DEBUG DCFilter:139 - Loading deafult log init handler
-14:35:09,505 DEBUG DCFilter:143 - NDC Filter initialized
-14:35:09,590 DEBUG KonyWebCommon:55 - initializing webcommon servlet
-14:35:09,627 DEBUG WAPConfigUtility:55 - Trying to load Resource Bundle - /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:35:09,628 DEBUG WAPConfigUtility:55 - Unable to load Resource Bundle - as file doesn't exists in :  /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:35:09,771  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:35:09,970  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:35:09,970  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:35:10,294 DEBUG DCFilter:139 - Loading deafult log init handler
-14:35:10,308 DEBUG DCFilter:143 - NDC Filter initialized
-14:35:10,535  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:35:10,594  INFO JettyLOG:32 - Started {}
-14:35:10,595  INFO JettyLOG:33 - SelectChannelConnector@0.0.0.0:8888
-14:35:10,598  INFO JettyLOG:32 - Started {}
-14:35:10,598  INFO JettyLOG:33 - SslSocketConnector@0.0.0.0:8443
-14:38:50,792  INFO JettyLOG:32 - jetty-6.1.11
-14:38:51,183  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:38:51,184  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:38:51,737 DEBUG DCFilter:139 - Loading deafult log init handler
-14:38:51,756 DEBUG DCFilter:143 - NDC Filter initialized
-14:38:51,848 DEBUG KonyWebCommon:55 - initializing webcommon servlet
-14:38:51,883 DEBUG WAPConfigUtility:55 - Trying to load Resource Bundle - /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:38:51,884 DEBUG WAPConfigUtility:55 - Unable to load Resource Bundle - as file doesn't exists in :  /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:38:51,993  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:38:52,270  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:38:52,271  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:38:52,524 DEBUG DCFilter:139 - Loading deafult log init handler
-14:38:52,527 DEBUG DCFilter:143 - NDC Filter initialized
-14:38:52,822  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:38:52,892  INFO JettyLOG:32 - Started {}
-14:38:52,892  INFO JettyLOG:33 - SelectChannelConnector@0.0.0.0:8888
-14:38:52,895  INFO JettyLOG:32 - Started {}
-14:38:52,896  INFO JettyLOG:33 - SslSocketConnector@0.0.0.0:8443
-14:48:32,405  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:48:32,655  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:48:32,846  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:48:33,057  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:52:17,955  INFO JettyLOG:32 - jetty-6.1.11
-14:52:18,279  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:52:18,280  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:52:19,469 DEBUG DCFilter:139 - Loading deafult log init handler
-14:52:19,489 DEBUG DCFilter:143 - NDC Filter initialized
-14:52:19,669 DEBUG KonyWebCommon:55 - initializing webcommon servlet
-14:52:19,707 DEBUG WAPConfigUtility:55 - Trying to load Resource Bundle - /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:52:19,707 DEBUG WAPConfigUtility:55 - Unable to load Resource Bundle - as file doesn't exists in :  /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
-14:52:19,834  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:52:20,201  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
-14:52:20,202  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:52:20,630 DEBUG DCFilter:139 - Loading deafult log init handler
-14:52:20,649 DEBUG DCFilter:143 - NDC Filter initialized
-14:52:21,104  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
-14:52:21,396  INFO JettyLOG:32 - Started {}
-14:52:21,396  INFO JettyLOG:33 - SelectChannelConnector@0.0.0.0:8888
-14:52:21,409  INFO JettyLOG:32 - Started {}
-14:52:21,409  INFO JettyLOG:33 - SslSocketConnector@0.0.0.0:8443
-14:52:32,240  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:52:32,543  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:52:32,761  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:59:06,040  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:59:08,863  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:59:11,477  INFO CGE:148 - Application Context given by IDE, already created and still alive
-14:59:14,202  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:01:24,234  INFO JettyLOG:32 - Shutdown hook executing
-15:01:24,234  INFO JettyLOG:32 - Shutdown hook complete
-15:07:33,393  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:07:34,268  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:07:34,927  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:07:35,780  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:12:09,358  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:12:47,189  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:12:47,912  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:12:48,572  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:12:49,254  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:20:31,602  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:20:50,315  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:21:28,409  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:21:29,091  INFO CGE:148 - Application Context given by IDE, already created and still alive
-15:21:29,740  INFO CGE:148 - Application Context given by IDE, already created and still alive
+17:44:37,327  INFO CGE:148 - Application Context given by IDE, already created and still alive
+17:44:37,611  INFO CGE:148 - Application Context given by IDE, already created and still alive
+17:44:37,643  INFO CGE:148 - Application Context given by IDE, already created and still alive
+17:44:37,977  INFO CGE:148 - Application Context given by IDE, already created and still alive
+17:44:57,516  INFO JettyLOG:32 - jetty-6.1.11
+17:44:58,493  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
+17:44:58,496  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
+17:44:58,817 DEBUG DCFilter:139 - Loading deafult log init handler
+17:44:58,820 DEBUG DCFilter:143 - NDC Filter initialized
+17:44:58,956 DEBUG KonyWebCommon:55 - initializing webcommon servlet
+17:44:58,973 DEBUG WAPConfigUtility:55 - Trying to load Resource Bundle - /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
+17:44:58,974 DEBUG WAPConfigUtility:55 - Unable to load Resource Bundle - as file doesn't exists in :  /Users/fernandofernandes/Documents/Projects/Software/singledev/sicredi-paintcode-kony/Kony/middleware/middleware-bootconfig/tc/KonyPaintCode.properties
+17:44:59,133  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
+17:44:59,313  INFO JettyLOG:32 - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
+17:44:59,314  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
+17:44:59,652 DEBUG DCFilter:139 - Loading deafult log init handler
+17:44:59,668 DEBUG DCFilter:143 - NDC Filter initialized
+17:44:59,835  INFO JettyLOG:32 - No Transaction manager found - if your webapp requires one, please configure one.
+17:44:59,884  INFO JettyLOG:32 - Started {}
+17:44:59,884  INFO JettyLOG:33 - SelectChannelConnector@0.0.0.0:8888
+17:44:59,919  INFO JettyLOG:32 - Started {}
+17:44:59,924  INFO JettyLOG:33 - SslSocketConnector@0.0.0.0:8443
+17:45:10,505  INFO JettyLOG:32 - Shutdown hook executing
+17:45:10,506  INFO JettyLOG:32 - Shutdown hook complete

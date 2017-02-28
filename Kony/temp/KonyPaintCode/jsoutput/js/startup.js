@@ -158,9 +158,9 @@ function appInit( params )
 
 
       //#ifdef FM_EXCEPTIONAL_PLATFORMS
-            GoalFormGlobals();
+            GoalIconGlobals();
         //#else
-            GoalFormGlobals();
+            GoalIconGlobals();
         //#endif
         setAppBehaviors();
     
@@ -178,7 +178,7 @@ function themeCallBack(){
 
                                                         kony.application.setApplicationInitializationEvents({                                                                                                 init : appInit,
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     showstartupform : function (){
-                                                                                                                                                                                                                                                    GoalForm.show();
+                                                                                                                                                                                                                                                    GoalIcon.show();
                                                                                                                         }
                                                                                              });
 };
@@ -271,16 +271,16 @@ function loadResources(){
 
 
         //#ifdef android
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef j2me
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef bb
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef tabrcandroid
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
     
            kony.theme.setCurrentTheme("default",themeCallBack,themeCallBack);
@@ -358,9 +358,9 @@ function appInit( params )
 
  
       //#ifdef FM_EXCEPTIONAL_PLATFORMS
-            GoalFormGlobals();
+            GoalIconGlobals();
         //#else
-            GoalFormGlobals();
+            GoalIconGlobals();
         //#endif
         setAppBehaviors();
     
@@ -389,7 +389,7 @@ function themeCallBack(){
 		
                                                         kony.application.setApplicationInitializationEvents({                                                                                                 init : appInit,
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        showstartupform : function (){
-                                                                                                                                                                                                                                                    GoalForm.show();
+                                                                                                                                                                                                                                                    GoalIcon.show();
                                                                                                                         }
                                                                                              });
 };
@@ -480,16 +480,16 @@ function loadResources(){
    globalhttpheaders = {
                         };
                 //#ifdef android
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef j2me
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef bb
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
             //#ifdef tabrcandroid
-        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_SicrediStyleKitFFI"});
+        kony.os.loadLibrary({"javaclassname" : "com.konylabs.ffi.N_StyleKitFFI"});
     //#endif
     //#ifdef android_ios
  sdkInitConfig = {

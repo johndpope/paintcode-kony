@@ -1,1 +1,0 @@
-//picker view is not supported in SPA/desktopweb

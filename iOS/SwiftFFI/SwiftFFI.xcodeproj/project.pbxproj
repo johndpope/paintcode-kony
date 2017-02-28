@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		423996341E65DF3300E53B56 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423996331E65DF3300E53B56 /* Goal.swift */; };
 		423996381E65DF7700E53B56 /* FFIWraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 423996371E65DF7700E53B56 /* FFIWraper.m */; };
+		4278A80B1E6612CA000FE8D3 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278A80A1E6612CA000FE8D3 /* StyleKit.swift */; };
 		ED5874021E644885001168E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5874011E644885001168E3 /* AppDelegate.swift */; };
 		ED5874041E644885001168E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5874031E644885001168E3 /* MainViewController.swift */; };
 		ED5874071E644885001168E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5874051E644885001168E3 /* Main.storyboard */; };
 		ED5874091E644885001168E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5874081E644885001168E3 /* Assets.xcassets */; };
-		EDCEF9EB1E659EDE001D5238 /* SicrediStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCEF9EA1E659EDE001D5238 /* SicrediStyleKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +21,13 @@
 		423996371E65DF7700E53B56 /* FFIWraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFIWraper.m; path = FFI/FFIWraper.m; sourceTree = "<group>"; };
 		423996391E65DFA900E53B56 /* SwiftFFI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftFFI-Bridging-Header.h"; sourceTree = "<group>"; };
 		4239963A1E65DFBC00E53B56 /* FFIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFIWrapper.h; path = FFI/FFIWrapper.h; sourceTree = "<group>"; };
+		4278A80A1E6612CA000FE8D3 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		ED5873FE1E644885001168E3 /* SwiftFFI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFFI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5874011E644885001168E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5874031E644885001168E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ED5874061E644885001168E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED5874081E644885001168E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED58740D1E644885001168E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDCEF9EA1E659EDE001D5238 /* SicrediStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SicrediStyleKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				ED5874011E644885001168E3 /* AppDelegate.swift */,
 				ED5874081E644885001168E3 /* Assets.xcassets */,
 				ED58740D1E644885001168E3 /* Info.plist */,
-				EDCEF9EA1E659EDE001D5238 /* SicrediStyleKit.swift */,
+				4278A80A1E6612CA000FE8D3 /* StyleKit.swift */,
 				423996391E65DFA900E53B56 /* SwiftFFI-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
@@ -198,8 +198,8 @@
 				423996381E65DF7700E53B56 /* FFIWraper.m in Sources */,
 				423996341E65DF3300E53B56 /* Goal.swift in Sources */,
 				ED5874041E644885001168E3 /* MainViewController.swift in Sources */,
+				4278A80B1E6612CA000FE8D3 /* StyleKit.swift in Sources */,
 				ED5874021E644885001168E3 /* AppDelegate.swift in Sources */,
-				EDCEF9EB1E659EDE001D5238 /* SicrediStyleKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.sicredi.SwiftFFI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.SwiftFFI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/SwiftFFI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -335,7 +335,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.sicredi.SwiftFFI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.SwiftFFI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/SwiftFFI-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

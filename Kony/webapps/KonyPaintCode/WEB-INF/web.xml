@@ -58,7 +58,7 @@
         </init-param>
         <init-param>
             <param-name>spa</param-name>
-            <param-value>spaiphone</param-value>
+            <param-value></param-value>
         </init-param> 
         </servlet>
     <servlet-mapping>

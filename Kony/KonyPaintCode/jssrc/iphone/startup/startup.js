@@ -22,7 +22,7 @@ function appInit(params) {
     kony.application.setCheckBoxSelectionImageAlignment(constants.CHECKBOX_SELECTION_IMAGE_ALIGNMENT_RIGHT);
     kony.application.setDefaultTextboxPadding(false);
     kony.application.setRespectImageSizeForImageWidgetAlignment(true);
-    GoalFormGlobals();
+    GoalIconGlobals();
     setAppBehaviors();
 };
 
@@ -40,7 +40,7 @@ function themeCallBack() {
     kony.application.setApplicationInitializationEvents({
         init: appInit,
         showstartupform: function() {
-            GoalForm.show();
+            GoalIcon.show();
         }
     });
 };

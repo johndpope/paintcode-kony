@@ -3,7 +3,7 @@
 //  SwiftFFI
 //
 //  Created by Fernando Fernandes on 2/27/17.
-//  Copyright © 2017 Sicredi. All rights reserved.
+//  Copyright © 2017 singledev. All rights reserved.
 //
 
 import UIKit
@@ -51,7 +51,7 @@ class MainViewController: UIViewController {
         
         updateLabels()
         
-        iconGoal.image = SicrediStyleKit.imageOfGoal(
+        iconGoal.image = StyleKit.imageOfGoal(
             imageSize: iconGoal.frame.size,
             goalPercentTextSize: CGFloat(textSizeSlider.value),
             goalPercentageStrokeSize: CGFloat(strokeSlider.value),
