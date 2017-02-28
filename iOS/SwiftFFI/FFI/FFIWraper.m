@@ -11,17 +11,23 @@
 
 @implementation FFIWrapper
 
-+ (UIImage *)drawGoalWithWidth:(CGFloat)width
-                        height:(CGFloat)height
-                      textSize:(CGFloat)textSize
-                    strokeSize:(CGFloat)strokeSize
-                      progress:(CGFloat)progress {
++ (NSString *)drawGoalWithWidth:(CGFloat)width
+                         height:(CGFloat)height
+                       textSize:(CGFloat)textSize
+                     strokeSize:(CGFloat)strokeSize
+                       progress:(CGFloat)progress {
     
     CGSize size = CGSizeMake(width, height);
-    return [SicrediStyleKit imageOfGoalWithImageSize:size
-                                 goalPercentTextSize:textSize
-                            goalPercentageStrokeSize:strokeSize
-                                        goalProgress:progress];
+    UIImage *goalImage = [SicrediStyleKit imageOfGoalWithImageSize:size
+                                               goalPercentTextSize:textSize
+                                          goalPercentageStrokeSize:strokeSize
+                                                      goalProgress:progress];
+    
+    return [self encodeToBase64String: goalImage];
+}
+
++ (NSString *)encodeToBase64String:(UIImage *)image {
+    return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
 }
 
 @end

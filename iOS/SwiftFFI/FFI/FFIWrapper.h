@@ -11,10 +11,10 @@
 
 @interface FFIWrapper: NSObject
 
-+ (UIImage *)drawGoalWithWidth:(CGFloat)width
-                        height:(CGFloat)height
-                      textSize:(CGFloat)textSize
-                    strokeSize:(CGFloat)strokeSize
-                      progress:(CGFloat)progress;
++ (NSString *)drawGoalWithWidth:(CGFloat)width
+                         height:(CGFloat)height
+                       textSize:(CGFloat)textSize
+                     strokeSize:(CGFloat)strokeSize
+                       progress:(CGFloat)progress;
 
 @end

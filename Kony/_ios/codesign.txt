@@ -1,0 +1,17 @@
+
+Policy: X.509 Basic
+  Matching identities
+  1) 353EC2E9976231752843C2CAE6C593301679B687 "com.apple.idms.appleid.prd.6a6b44766234306d4a6b367a515146576a624c3152773d3d"
+  2) F0195563EE9FBAAADA2493BAB8657D1DC3F20BFE "fmfernan@br.ibm.com"
+  3) 2E3D59500EBB46714B25F72EB765C2ADA9A4976B "iPhone Developer: fernando_marion@terceiros.sicredi.com.br (864H55T528)"
+  4) 63260E878019E0F5BD0E3FD2C8B9933B0496D717 "iPhone Developer: Fernando Marion (QY8XQ3ZN84)"
+  5) C85DFA4208733C68CC9DB28E5AC4B97E5D8F7ECD "iPhone Developer: Fernando Fernandes (X6M6A4SVRT)"
+     5 identities found
+
+  Valid identities only
+  1) 353EC2E9976231752843C2CAE6C593301679B687 "com.apple.idms.appleid.prd.6a6b44766234306d4a6b367a515146576a624c3152773d3d"
+  2) F0195563EE9FBAAADA2493BAB8657D1DC3F20BFE "fmfernan@br.ibm.com"
+  3) 2E3D59500EBB46714B25F72EB765C2ADA9A4976B "iPhone Developer: fernando_marion@terceiros.sicredi.com.br (864H55T528)"
+  4) 63260E878019E0F5BD0E3FD2C8B9933B0496D717 "iPhone Developer: Fernando Marion (QY8XQ3ZN84)"
+  5) C85DFA4208733C68CC9DB28E5AC4B97E5D8F7ECD "iPhone Developer: Fernando Fernandes (X6M6A4SVRT)"
+     5 valid identities found

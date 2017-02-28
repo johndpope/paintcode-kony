@@ -1,0 +1,551 @@
+{   "lineNormal":
+    {
+                                            "wtype" : "Line",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "5c5c5c00",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "dgHead":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "font_weight" : "bold",
+                                                          "font_size" : 130,
+                                                          "font_color" : "1ba1e200",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "txt2Normal":
+    {
+                                            "wtype" : "TextArea2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bebebe00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "listboxNormal":
+    {
+                                            "wtype" : "ListBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "50505000",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "txtFocus":
+    {
+                                            "wtype" : "TextArea",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "calNormal":
+    {
+                                            "wtype" : "Calendar",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "hStrip2Focus":
+    {
+                                            "wtype" : "HImageStrip2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tabInactive":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "63636300",
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "sliderLeft":
+    {
+                                            "wtype" : "Slider",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "1ba1e200",
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "txtNormal":
+    {
+                                            "wtype" : "TextArea",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bebebe00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "cboxFocus":
+    {
+                                            "wtype" : "ComboBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "cboxNormal":
+    {
+                                            "wtype" : "ComboBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "50505000",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tbx2Focus":
+    {
+                                            "wtype" : "TextBox2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "listboxFocus":
+    {
+                                            "wtype" : "ListBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "dgFocus":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff3c",
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "galFocus":
+    {
+                                            "wtype" : "ImageGallery",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tabActive":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bdbdbd00",
+                                                          "font_color" : "41414100",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "radioFocus":
+    {
+                                            "wtype" : "RadioButtonGroup",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "segFocus":
+    {
+                                            "wtype" : "Segment",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff3c",
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "camNormal":
+    {
+                                            "wtype" : "Camera",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "00000000",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "dgRow":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "galNormal":
+    {
+                                            "wtype" : "ImageGallery",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "segNormal":
+    {
+                                            "wtype" : "Segment",
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tbxFocus":
+    {
+                                            "wtype" : "TextBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "btnFocus":
+    {
+                                            "wtype" : "Button",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false},
+                                                          "text_shadow" : {"x":0,"y":0,"br":0,"color":"00000000"}
+                              }
+	 ,   "hStrip2Normal":
+    {
+                                            "wtype" : "HImageStrip2",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "cbxFocus":
+    {
+                                            "wtype" : "CheckBoxGroup",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "camFocus":
+    {
+                                            "wtype" : "Camera",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "hStripNormal":
+    {
+                                            "wtype" : "HImageStrip",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "seg2Normal":
+    {
+                                            "wtype" : "Segment2",
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "phoneFocus":
+    {
+                                            "wtype" : "Phone",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "seg2Header":
+    {
+                                            "wtype" : "Segment2",
+                                                          "font_size" : 150,
+                                                          "font_color" : "1ba1e200",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tbx2Normal":
+    {
+                                            "wtype" : "TextBox2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bebebe00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "segHeader":
+    {
+                                            "wtype" : "Segment",
+                                                          "font_size" : 150,
+                                                          "font_color" : "1ba1e200",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "gal2Normal":
+    {
+                                            "wtype" : "ImageGallery2",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "hStripFocus":
+    {
+                                            "wtype" : "HImageStrip",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "seg2Focus":
+    {
+                                            "wtype" : "Segment2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff3c",
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "txt2Focus":
+    {
+                                            "wtype" : "TextArea2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "radioNormal":
+    {
+                                            "wtype" : "RadioButtonGroup",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tbxNormal":
+    {
+                                            "wtype" : "TextBox",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bebebe00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "btnNormal":
+    {
+                                            "wtype" : "Button",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "00000000",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false},
+                                                          "text_shadow" : {"x":0,"y":0,"br":0,"color":"00000000"}
+                              }
+	 ,   "frm":
+    {
+                                            "wtype" : "Form",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":true}
+                              }
+	 ,   "phoneNormal":
+    {
+                                            "wtype" : "Phone",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "00000000",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "sliderRight":
+    {
+                                            "wtype" : "Slider",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "bebebe00",
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "tabFocus":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "1ba1e200",
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "cbxNormal":
+    {
+                                            "wtype" : "CheckBoxGroup",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "richNormal":
+    {
+                                            "wtype" : "RichText",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "calFocus":
+    {
+                                            "wtype" : "Calendar",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "font_size" : 130,
+                                                          "font_color" : "00000000",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 2,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "lblNormal":
+    {
+                                            "wtype" : "Label",
+                                                          "font_size" : 130,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false},
+                                                          "text_shadow" : {"x":0,"y":0,"br":0,"color":"00000000"}
+                              }
+	 ,   "titleBar":
+    {
+                                            "wtype" : "TitleBar",
+                                                          "font_size" : 150,
+                                                          "font_color" : "ffffff00",
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 ,   "gal2Focus":
+    {
+                                            "wtype" : "ImageGallery2",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "ffffff00",
+                                                          "border_color" : "ffffff00",
+                                                          "border_width" : 0,
+                                                          "border_style" : "normal",
+                                                          "shadow" : {"x":0,"y":0,"br":0,"color":"00000000","inner":false}
+                              }
+	 }

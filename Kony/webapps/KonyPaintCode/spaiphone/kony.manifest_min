@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#Time stamp Tue Feb 28 14:31:30 BRT 2017
+#Version 1.0.0
+
+CACHE:
+jslib/konyframework.js
+appjs/app.js
+
+
+
+NETWORK:
+*

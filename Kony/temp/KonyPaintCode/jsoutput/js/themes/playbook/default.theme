@@ -1,0 +1,568 @@
+{   "lineNormal":
+    {
+                                            "wtype" : "Line",
+                                                          "bg_type" : "one",
+                                                          "background_color" : "5c5c5c00",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "dgHead":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "txt2Normal":
+    {
+                                            "wtype" : "TextArea2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "listboxNormal":
+    {
+                                            "wtype" : "ListBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "txtFocus":
+    {
+                                            "wtype" : "TextArea",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "calNormal":
+    {
+                                            "wtype" : "Calendar",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "hStrip2Focus":
+    {
+                                            "wtype" : "HImageStrip2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tabInactive":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "two",
+                                                          "background_style" : "vg",
+                                                          "background_gradient_top_color" : "63636300",
+                                                          "background_gradient_bottom_color" : "41414100",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_size" : 120,
+                                                          "font_color" : "ffffff00",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "sliderLeft":
+    {
+                                            "wtype" : "Slider",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "txtNormal":
+    {
+                                            "wtype" : "TextArea",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "cboxFocus":
+    {
+                                            "wtype" : "ComboBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "cboxNormal":
+    {
+                                            "wtype" : "ComboBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tbx2Focus":
+    {
+                                            "wtype" : "TextBox2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "listboxFocus":
+    {
+                                            "wtype" : "ListBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "dgFocus":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "galFocus":
+    {
+                                            "wtype" : "ImageGallery",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tabActive":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "two",
+                                                          "background_style" : "vg",
+                                                          "background_gradient_top_color" : "f5f5f500",
+                                                          "background_gradient_bottom_color" : "bdbdbd00",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_size" : 120,
+                                                          "font_color" : "41414100",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "radioFocus":
+    {
+                                            "wtype" : "RadioButtonGroup",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "segFocus":
+    {
+                                            "wtype" : "Segment",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "camNormal":
+    {
+                                            "wtype" : "Camera",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "dgRow":
+    {
+                                            "wtype" : "DataGrid",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "galNormal":
+    {
+                                            "wtype" : "ImageGallery",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "segNormal":
+    {
+                                            "wtype" : "Segment",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tbxFocus":
+    {
+                                            "wtype" : "TextBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "btnFocus":
+    {
+                                            "wtype" : "Button",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "hStrip2Normal":
+    {
+                                            "wtype" : "HImageStrip2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "cbxFocus":
+    {
+                                            "wtype" : "CheckBoxGroup",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "camFocus":
+    {
+                                            "wtype" : "Camera",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "hStripNormal":
+    {
+                                            "wtype" : "HImageStrip",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "seg2Normal":
+    {
+                                            "wtype" : "Segment2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "phoneFocus":
+    {
+                                            "wtype" : "Phone",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "seg2Header":
+    {
+                                            "wtype" : "Segment2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tbx2Normal":
+    {
+                                            "wtype" : "TextBox2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "segHeader":
+    {
+                                            "wtype" : "Segment",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "gal2Normal":
+    {
+                                            "wtype" : "ImageGallery2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "hStripFocus":
+    {
+                                            "wtype" : "HImageStrip",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "seg2Focus":
+    {
+                                            "wtype" : "Segment2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "txt2Focus":
+    {
+                                            "wtype" : "TextArea2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "radioNormal":
+    {
+                                            "wtype" : "RadioButtonGroup",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tbxNormal":
+    {
+                                            "wtype" : "TextBox",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "btnNormal":
+    {
+                                            "wtype" : "Button",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "frm":
+    {
+                                            "wtype" : "Form",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "phoneNormal":
+    {
+                                            "wtype" : "Phone",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "sliderRight":
+    {
+                                            "wtype" : "Slider",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "tabFocus":
+    {
+                                            "wtype" : "TabPane",
+                                                          "bg_type" : "two",
+                                                          "background_style" : "vg",
+                                                          "background_gradient_top_color" : "f79a2900",
+                                                          "background_gradient_bottom_color" : "ff9a2900",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_size" : 120,
+                                                          "font_color" : "ffffff00",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "cbxNormal":
+    {
+                                            "wtype" : "CheckBoxGroup",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "richNormal":
+    {
+                                            "wtype" : "RichText",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "calFocus":
+    {
+                                            "wtype" : "Calendar",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "lblNormal":
+    {
+                                            "wtype" : "Label",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,spawinphone8,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid,spatabwindows",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "titleBar":
+    {
+                                            "wtype" : "TitleBar",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,desktop_kiosk",
+                                                          "font_color" : "00000000",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 ,   "gal2Focus":
+    {
+                                            "wtype" : "ImageGallery2",
+                                                          "forked" : "iphone,android,bb,bb10,winmobile6x,winphone8,winmobile,ipad,tabrcandroid,windows8,spaip,spaan,spabb,xadvip,xadvand,xadvbb,desktop_kiosk,spaipad,spatabandroid",
+                                                          "customcss" : false,
+                                                          "border_color" : "00000000",
+                                                          "border_width" : 0,
+                                                          "border_style" : "plain",
+                                                          "border_radius" : 0
+                              }
+	 }
