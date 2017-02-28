@@ -31,7 +31,7 @@ public class SicrediStyleKit : NSObject {
 
     //// Drawing Methods
 
-    public dynamic class func drawGoal(frame: CGRect = CGRect(x: 0, y: 0, width: 68, height: 88), goalPercentTextSize: CGFloat = 12, goalProgress: CGFloat = 1) {
+    public dynamic class func drawGoal(frame: CGRect = CGRect(x: 0, y: 0, width: 68, height: 88), goalPercentTextSize: CGFloat = 12, goalPercentageStrokeSize: CGFloat = 7, goalProgress: CGFloat = 1) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -54,20 +54,20 @@ public class SicrediStyleKit : NSObject {
         //// CircleBackgroundBezier Drawing
         let circleBackgroundBezierPath = UIBezierPath(ovalIn: CGRect(x: goalGroup.minX + fastFloor(goalGroup.width * 0.06061 + 0.5), y: goalGroup.minY + fastFloor(goalGroup.height * 0.23256 + 0.5), width: fastFloor(goalGroup.width * 0.93939 + 0.5) - fastFloor(goalGroup.width * 0.06061 + 0.5), height: fastFloor(goalGroup.height * 0.90698 + 0.5) - fastFloor(goalGroup.height * 0.23256 + 0.5)))
         SicrediStyleKit.background.setStroke()
-        circleBackgroundBezierPath.lineWidth = 7
+        circleBackgroundBezierPath.lineWidth = goalPercentageStrokeSize
         circleBackgroundBezierPath.stroke()
 
 
         if (goalPercentageVisible) {
-            //// CircleProgressBezier Drawing
-            let circleProgressBezierRect = CGRect(x: goalGroup.minX + fastFloor(goalGroup.width * 0.06061 + 0.5), y: goalGroup.minY + fastFloor(goalGroup.height * 0.23256 + 0.5), width: fastFloor(goalGroup.width * 0.93939 + 0.5) - fastFloor(goalGroup.width * 0.06061 + 0.5), height: fastFloor(goalGroup.height * 0.90698 + 0.5) - fastFloor(goalGroup.height * 0.23256 + 0.5))
-            let circleProgressBezierPath = UIBezierPath()
-            circleProgressBezierPath.addArc(withCenter: CGPoint(x: circleProgressBezierRect.midX, y: circleProgressBezierRect.midY), radius: circleProgressBezierRect.width / 2, startAngle: 133 * CGFloat.pi/180, endAngle: -(goalResultAngle + 227) * CGFloat.pi/180, clockwise: true)
+            //// CircleProgressStroke Drawing
+            let circleProgressStrokeRect = CGRect(x: goalGroup.minX + fastFloor(goalGroup.width * 0.06061 + 0.5), y: goalGroup.minY + fastFloor(goalGroup.height * 0.23256 + 0.5), width: fastFloor(goalGroup.width * 0.93939 + 0.5) - fastFloor(goalGroup.width * 0.06061 + 0.5), height: fastFloor(goalGroup.height * 0.90698 + 0.5) - fastFloor(goalGroup.height * 0.23256 + 0.5))
+            let circleProgressStrokePath = UIBezierPath()
+            circleProgressStrokePath.addArc(withCenter: CGPoint(x: circleProgressStrokeRect.midX, y: circleProgressStrokeRect.midY), radius: circleProgressStrokeRect.width / 2, startAngle: 133 * CGFloat.pi/180, endAngle: -(goalResultAngle + 227) * CGFloat.pi/180, clockwise: true)
 
             SicrediStyleKit.green.setStroke()
-            circleProgressBezierPath.lineWidth = 7
-            circleProgressBezierPath.lineCapStyle = .round
-            circleProgressBezierPath.stroke()
+            circleProgressStrokePath.lineWidth = goalPercentageStrokeSize
+            circleProgressStrokePath.lineCapStyle = .round
+            circleProgressStrokePath.stroke()
         }
 
 
@@ -199,9 +199,9 @@ public class SicrediStyleKit : NSObject {
 
     //// Generated Images
 
-    public dynamic class func imageOfGoal(imageSize: CGSize = CGSize(width: 68, height: 88), goalPercentTextSize: CGFloat = 12, goalProgress: CGFloat = 1) -> UIImage {
+    public dynamic class func imageOfGoal(imageSize: CGSize = CGSize(width: 68, height: 88), goalPercentTextSize: CGFloat = 12, goalPercentageStrokeSize: CGFloat = 7, goalProgress: CGFloat = 1) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
-            SicrediStyleKit.drawGoal(frame: CGRect(x: 0, y: 0, width: imageSize.width, height: imageSize.height), goalPercentTextSize: goalPercentTextSize, goalProgress: goalProgress)
+            SicrediStyleKit.drawGoal(frame: CGRect(x: 0, y: 0, width: imageSize.width, height: imageSize.height), goalPercentTextSize: goalPercentTextSize, goalPercentageStrokeSize: goalPercentageStrokeSize, goalProgress: goalProgress)
 
         let imageOfGoal = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
