@@ -3,7 +3,7 @@
 //  SwiftFFI
 //
 //  Created by Fernando Fernandes on 28/02/17.
-//  Copyright © 2017 singledev. All rights reserved.
+//  Copyright © 2017 backslash-f. All rights reserved.
 //
 
 #import "FFIWrapper.h"
