@@ -646,11 +646,11 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>var goalIconBig = StyleKitFFI.drawGoal(161,208,18,9,0);
-var goalIconSmall = StyleKitFFI.drawGoal(53,68,10,4,0);
+                            <value>//var goalIconBig = StyleKitFFI.drawGoal(161,208,18,9,0);
+//var goalIconSmall = StyleKitFFI.drawGoal(53,68,10,4,0);
 
-GoalIcon.goalBig.base64 = goalIconBig;
-GoalIcon.goalSmall.base64 = goalIconSmall;
+//GoalIcon.goalBig.base64 = goalIconBig;
+//GoalIcon.goalSmall.base64 = goalIconSmall;
 </value>
                         </entry>
                     </exprMap>
@@ -659,6 +659,24 @@ GoalIcon.goalSmall.base64 = goalIconSmall;
                 <seqname></seqname>
             </evtSequence>
         </preShow_root>
+        <postShow_root>
+            <evtSequence>
+                <actionList xsi:type="eventExpressionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>5</type>
+                    <expr></expr>
+                    <exprMap>
+                        <entry>
+                            <key>js</key>
+                            <value></value>
+                        </entry>
+                    </exprMap>
+                </actionList>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </postShow_root>
         <init>
             <evtSequence>
                 <enabled>true</enabled>
@@ -4337,6 +4355,28 @@ GoalIcon.goalSmall.base64 = goalIconSmall;</value>
             </overridePerferred>
             <contentAlign>4</contentAlign>
             <parent_contentalignment>middle-center</parent_contentalignment>
+            <event_onClick>
+                <evtSequence>
+                    <actionList xsi:type="eventExpressionAction">
+                        <enabled>true</enabled>
+                        <name></name>
+                        <type>5</type>
+                        <expr></expr>
+                        <exprMap>
+                            <entry>
+                                <key>js</key>
+                                <value>if (kony.store.getItem("doesntExist") === null) {
+	kony.print("IT DOESN'T EXISSSTT");
+} else {
+	kony.print("catarina");
+}</value>
+                            </entry>
+                        </exprMap>
+                    </actionList>
+                    <enabled>true</enabled>
+                    <seqname></seqname>
+                </evtSequence>
+            </event_onClick>
             <parallel_exec>false</parallel_exec>
             <iphone_glow_effect>false</iphone_glow_effect>
             <iphone_3d_look>true</iphone_3d_look>
@@ -4462,22 +4502,6 @@ GoalIcon.goalSmall.base64 = goalIconSmall;</value>
             </event_onTouchMove>
             <event_onTouchEnd>
                 <evtSequence>
-                    <actionList xsi:type="eventExpressionAction">
-                        <enabled>true</enabled>
-                        <name></name>
-                        <type>5</type>
-                        <expr></expr>
-                        <exprMap>
-                            <entry>
-                                <key>js</key>
-                                <value>var goalIconBig = StyleKitFFI.drawGoal(161,208,18,9,1);
-var goalIconSmall = StyleKitFFI.drawGoal(53,68,10,4,1);
-
-GoalIcon.goalBig.base64 = goalIconBig;
-GoalIcon.goalSmall.base64 = goalIconSmall;</value>
-                            </entry>
-                        </exprMap>
-                    </actionList>
                     <enabled>true</enabled>
                     <seqname></seqname>
                 </evtSequence>

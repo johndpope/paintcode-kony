@@ -3,14 +3,11 @@ package com.backslash_f.androidffi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.PointF;
 import android.graphics.RectF;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import static com.backslash_f.androidffi.StyleKit.*;
 
 /**
  * TODO: document your custom view class.
@@ -40,7 +37,6 @@ public class GoalView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        RectF frame = new RectF(0, 0, 161, 208);
-        StyleKit.drawGoal(canvas, frame, 18f, 7f, 0.45f);
+        drawGoal(canvas, this.getContext(), new RectF(0, 0, getWidth(), getHeight()), 24f, 7f, 1.0f);
     }
 }
