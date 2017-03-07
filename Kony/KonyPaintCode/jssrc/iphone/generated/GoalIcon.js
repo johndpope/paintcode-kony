@@ -1,39 +1,35 @@
 //Form JS File
 function GoalIcon_GoalIcon_preshow_seq0(eventobject) {
-    var goalIconBig = StyleKitFFI.drawGoal(161, 208, 18, 9, 0);
-    var goalIconSmall = StyleKitFFI.drawGoal(53, 68, 10, 4, 0);
-    GoalIcon.goalBig.base64 = goalIconBig;
-    GoalIcon.goalSmall.base64 = goalIconSmall;
+    //var goalIconBig = StyleKitFFI.drawGoal(161,208,18,9,0);
+    //var goalIconSmall = StyleKitFFI.drawGoal(53,68,10,4,0);
+    //GoalIcon.goalBig.base64 = goalIconBig;
+    //GoalIcon.goalSmall.base64 = goalIconSmall;
 };
 
+function GoalIcon_GoalIcon_postshow_seq0(eventobject) {};
+
 function GoalIcon_button45_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIconBig = StyleKitFFI.drawGoal(161, 208, 18, 9, 0.45);
-    var goalIconSmall = StyleKitFFI.drawGoal(53, 68, 10, 4, 0.45);
-    GoalIcon.goalBig.base64 = goalIconBig;
-    GoalIcon.goalSmall.base64 = goalIconSmall;
+    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 0.45);
+    GoalIcon.goal.base64 = goalIcon;
 };
 
 function GoalIcon_button100_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIconBig = StyleKitFFI.drawGoal(161, 208, 18, 9, 1);
-    var goalIconSmall = StyleKitFFI.drawGoal(53, 68, 10, 4, 1);
-    GoalIcon.goalBig.base64 = goalIconBig;
-    GoalIcon.goalSmall.base64 = goalIconSmall;
+    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 1);
+    GoalIcon.goal.base64 = goalIcon;
 };
 
 function GoalIcon_button0_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIconBig = StyleKitFFI.drawGoal(161, 208, 18, 9, 0);
-    var goalIconSmall = StyleKitFFI.drawGoal(53, 68, 10, 4, 0);
-    GoalIcon.goalBig.base64 = goalIconBig;
-    GoalIcon.goalSmall.base64 = goalIconSmall;
+    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 0);
+    GoalIcon.goal.base64 = goalIcon;
 };
 
 function addWidgetsGoalIcon() {
-    var goalBig = new kony.ui.Image2({
-        "id": "goalBig",
-        "top": "35dp",
-        "left": "49dp",
-        "width": "161dp",
-        "height": "208dp",
+    var goal = new kony.ui.Image2({
+        "id": "goal",
+        "width": "91dp",
+        "height": "118dp",
+        "centerX": "50%",
+        "centerY": "50%",
         "zIndex": 1,
         "isVisible": true,
         "src": null,
@@ -44,36 +40,16 @@ function addWidgetsGoalIcon() {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "marginInPixel": false,
         "paddingInPixel": false,
-        "containerWeight": 47
-    }, {
-        "glossyEffect": constants.IMAGE_GLOSSY_EFFECT_DEFAULT
-    });
-    var goalSmall = new kony.ui.Image2({
-        "id": "goalSmall",
-        "top": "35dp",
-        "left": "227dp",
-        "width": "53dp",
-        "height": "68dp",
-        "zIndex": 1,
-        "isVisible": true,
-        "src": null,
-        "imageWhenFailed": null,
-        "imageWhileDownloading": null
-    }, {
-        "padding": [0, 0, 0, 0],
-        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        "containerWeight": 15
+        "containerWeight": 27
     }, {
         "glossyEffect": constants.IMAGE_GLOSSY_EFFECT_DEFAULT
     });
     var button45 = new kony.ui.Button({
         "id": "button45",
-        "top": "308dp",
-        "left": "20dp",
+        "bottom": "20.0%",
         "width": "60dp",
         "height": "40dp",
+        "centerX": "50%",
         "zIndex": 1,
         "isVisible": true,
         "text": "45%",
@@ -93,10 +69,10 @@ function addWidgetsGoalIcon() {
     });
     var button100 = new kony.ui.Button({
         "id": "button100",
-        "top": "358dp",
-        "left": "20dp",
+        "bottom": "20.0%",
         "width": "60dp",
         "height": "40dp",
+        "centerX": "70.0%",
         "zIndex": 1,
         "isVisible": true,
         "text": "100%",
@@ -116,10 +92,10 @@ function addWidgetsGoalIcon() {
     });
     var button0 = new kony.ui.Button({
         "id": "button0",
-        "top": "258dp",
-        "left": "20dp",
+        "bottom": "20.0%",
         "width": "60dp",
         "height": "40dp",
+        "centerX": "30%",
         "zIndex": 1,
         "isVisible": true,
         "text": "0%",
@@ -137,7 +113,7 @@ function addWidgetsGoalIcon() {
         "glowEffect": false,
         "showProgressIndicator": true
     });
-    GoalIcon.add(goalBig, goalSmall, button45, button100, button0);
+    GoalIcon.add(goal, button45, button100, button0);
     GoalIcon.setDefaultUnit(kony.flex.DP);
 };
 
@@ -153,8 +129,9 @@ function GoalIconGlobals() {
         "needAppMenu": true,
         "title": null,
         "enabledForIdleTimeout": false,
-        "skin": "frm",
+        "skin": "WhiteBackground",
         "preShow": GoalIcon_GoalIcon_preshow_seq0,
+        "postShow": GoalIcon_GoalIcon_postshow_seq0,
         "bouncesZoom": true,
         "zoomScale": 1.0,
         "minZoomScale": 1.0,

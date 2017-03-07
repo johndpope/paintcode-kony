@@ -7,11 +7,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import static com.backslash_f.androidffi.StyleKit.*;
+import static com.backslash_f.stylekit.StyleKit.*;
 
-/**
- * TODO: document your custom view class.
- */
 public class GoalView extends View {
 
     public GoalView(Context context) {

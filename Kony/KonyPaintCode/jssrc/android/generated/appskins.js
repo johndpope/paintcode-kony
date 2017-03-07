@@ -50,4 +50,5 @@ function skinsInit() {
     lblNormal = "lblNormal";
     titleBar = "titleBar";
     gal2Focus = "gal2Focus";
+    WhiteBackground = "WhiteBackground";
 };

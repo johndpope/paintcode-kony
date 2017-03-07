@@ -23,6 +23,8 @@
                                           goalPercentageStrokeSize:strokeSize
                                                       goalProgress:progress];
     
+    // Kony requires us to encode the image to Base64 String, so in Kony we can:
+    // "form.image2.base64 = imageEncodedToStringBase64".
     return [self encodeToBase64String: goalImage];
 }
 

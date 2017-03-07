@@ -19,7 +19,7 @@
 
     <view
         class="com.backslash_f.androidffi.GoalView"
-        android:id="@+id/view"
+        android:id="@+id/paintCodeView"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_width="84dp"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/paintCodeImage"
-        android:layout_below="@+id/view"
+        android:layout_below="@+id/paintCodeView"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

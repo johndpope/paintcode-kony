@@ -1,4 +1,4 @@
-package com.backslash_f.androidffi;
+package com.backslash_f.stylekit;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -16,8 +16,6 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import java.lang.ref.WeakReference;
-
-
 
 /**
  * Created by Fernando Fernandes on 06/03/17.

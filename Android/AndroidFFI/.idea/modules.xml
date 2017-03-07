@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidFFI.iml" filepath="$PROJECT_DIR$/AndroidFFI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stylekit/stylekit.iml" filepath="$PROJECT_DIR$/stylekit/stylekit.iml" />
     </modules>
   </component>
 </project>
