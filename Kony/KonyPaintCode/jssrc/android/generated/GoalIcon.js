@@ -23,6 +23,10 @@ function GoalIcon_button0_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
     GoalIcon.goal.base64 = goalIcon;
 };
 
+function GoalIcon_button5512889182583_onClick_seq0(eventobject) {
+    Performance.show();
+};
+
 function addWidgetsGoalIcon() {
     var goal = new kony.ui.Image2({
         "id": "goal",
@@ -102,7 +106,27 @@ function addWidgetsGoalIcon() {
         "paddingInPixel": false,
         "containerWeight": 9
     }, {});
-    GoalIcon.add(goal, button45, button100, button0);
+    var button5512889182583 = new kony.ui.Button({
+        "id": "button5512889182583",
+        "top": "0dp",
+        "right": "0",
+        "width": "100dp",
+        "height": "40dp",
+        "zIndex": 1,
+        "isVisible": true,
+        "text": "Performance",
+        "skin": "btnNormal",
+        "focusSkin": "btnFocus",
+        "onClick": GoalIcon_button5512889182583_onClick_seq0
+    }, {
+        "padding": [0, 0, 0, 0],
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "containerWeight": 9
+    }, {});
+    GoalIcon.add(goal, button45, button100, button0, button5512889182583);
     GoalIcon.setDefaultUnit(kony.flex.DP);
 };
 

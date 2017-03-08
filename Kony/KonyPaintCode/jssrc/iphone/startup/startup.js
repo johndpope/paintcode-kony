@@ -23,6 +23,7 @@ function appInit(params) {
     kony.application.setDefaultTextboxPadding(false);
     kony.application.setRespectImageSizeForImageWidgetAlignment(true);
     GoalIconGlobals();
+    PerformanceGlobals();
     setAppBehaviors();
 };
 

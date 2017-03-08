@@ -106,10 +106,10 @@ public class StyleKit : NSObject {
 
 
         //// GoalPercentageText Drawing
-        let goalPercentageTextRect = CGRect(x: goalGroup.minX + fastFloor(goalGroup.width * 0.03226 + 0.5), y: goalGroup.minY + fastFloor(goalGroup.height * 0.83885 - 0.25) + 0.75, width: fastFloor(goalGroup.width * 0.98387 + 0.5) - fastFloor(goalGroup.width * 0.03226 + 0.5), height: fastFloor(goalGroup.height * 0.95396 - 0.25) - fastFloor(goalGroup.height * 0.83885 - 0.25))
+        let goalPercentageTextRect = CGRect(x: goalGroup.minX + fastFloor(goalGroup.width * 0.00000 + 0.5), y: goalGroup.minY + fastFloor(goalGroup.height * 0.79281 - 0.25) + 0.75, width: fastFloor(goalGroup.width * 1.00000 + 0.5) - fastFloor(goalGroup.width * 0.00000 + 0.5), height: fastFloor(goalGroup.height * 1.00000 - 0.25) - fastFloor(goalGroup.height * 0.79281 - 0.25))
         let goalPercentageTextStyle = NSMutableParagraphStyle()
         goalPercentageTextStyle.alignment = .center
-        let goalPercentageTextFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 22), NSForegroundColorAttributeName: StyleKit.white, NSParagraphStyleAttributeName: goalPercentageTextStyle]
+        let goalPercentageTextFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 20), NSForegroundColorAttributeName: StyleKit.white, NSParagraphStyleAttributeName: goalPercentageTextStyle]
 
         let goalPercentageTextTextHeight: CGFloat = goalPercentText.boundingRect(with: CGSize(width: goalPercentageTextRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: goalPercentageTextFontAttributes, context: nil).height
         context.saveGState()

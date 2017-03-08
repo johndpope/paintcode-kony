@@ -73,11 +73,11 @@ public class StyleKit {
         Paint paint = CacheForGoal.paint;
         
         // Local Variables
-        boolean goalCompleted = goalProgress == 1f ? true : false;
+        boolean goalPercentageVisible = goalProgress == 0f ? false : true;
         float goalPercentNumber = goalProgress * 100f;
         String goalPercentText = String.valueOf((float) Math.round(goalPercentNumber)) + "%";
-        boolean goalPercentageVisible = goalProgress == 0f ? false : true;
         float goalResultAngle = -1f * goalProgress * 279f;
+        boolean goalCompleted = goalProgress == 1f ? true : false;
         
         // GoalGroup
         {
@@ -171,15 +171,15 @@ public class StyleKit {
             
             // GoalPercentageText
             RectF goalPercentageTextRect = CacheForGoal.goalPercentageTextRect;
-            goalPercentageTextRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.03226f + 0.5f) + 0f,
-                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.83885f - 0.25f) + 0.75f,
-                goalGroup.left + (float) Math.floor(goalGroup.width() * 0.98387f + 0.5f) + 0f,
-                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.95396f - 0.25f) + 0.75f);
+            goalPercentageTextRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.79281f - 0.25f) + 0.75f,
+                goalGroup.left + (float) Math.floor(goalGroup.width() * 1f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() - 0.25f) + 0.75f);
             TextPaint goalPercentageTextTextPaint = CacheForGoal.goalPercentageTextTextPaint;
             goalPercentageTextTextPaint.reset();
             goalPercentageTextTextPaint.setColor(StyleKit.white);
             goalPercentageTextTextPaint.setTypeface(Typeface.create((String) null, Typeface.NORMAL));
-            goalPercentageTextTextPaint.setTextSize(22f);
+            goalPercentageTextTextPaint.setTextSize(20f);
 
             goalPercentageTextTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 

@@ -20,6 +20,7 @@ sessionID = "";
 function appInit(params) {
     skinsInit();
     GoalIconGlobals();
+    PerformanceGlobals();
     setAppBehaviors();
 };
 
