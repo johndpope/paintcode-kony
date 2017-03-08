@@ -42,7 +42,7 @@ public class N_StyleKitFFI extends JSLibrary {
  int inc = 1;
 		switch (index) {
  		case 0:
- if (paramLen != 5){ return new Object[] {new Double(100),"Invalid Params"}; }
+ if (paramLen != 3){ return new Object[] {new Double(100),"Invalid Params"}; }
  Double width0 = null;
  if(params[0] != null && params[0] != LuaNil.nil) {
  width0 = (Double)params[0];
@@ -51,19 +51,11 @@ public class N_StyleKitFFI extends JSLibrary {
  if(params[1] != null && params[1] != LuaNil.nil) {
  height0 = (Double)params[1];
  }
- Double textSize0 = null;
- if(params[2] != null && params[2] != LuaNil.nil) {
- textSize0 = (Double)params[2];
- }
- Double strokeSize0 = null;
- if(params[3] != null && params[3] != LuaNil.nil) {
- strokeSize0 = (Double)params[3];
- }
  Double progress0 = null;
- if(params[4] != null && params[4] != LuaNil.nil) {
- progress0 = (Double)params[4];
+ if(params[2] != null && params[2] != LuaNil.nil) {
+ progress0 = (Double)params[2];
  }
- ret = this.drawGoal( width0, height0, textSize0, strokeSize0, progress0 );
+ ret = this.drawGoal( width0, height0, progress0 );
  
  			break;
  		default:
@@ -90,10 +82,10 @@ public class N_StyleKitFFI extends JSLibrary {
 	 */
  
  
- 	public final Object[] drawGoal( Double inputKey0, Double inputKey1, Double inputKey2, Double inputKey3, Double inputKey4 ){
+ 	public final Object[] drawGoal( Double inputKey0, Double inputKey1, Double inputKey2 ){
  
 		Object[] ret = null;
- java.lang.String val = com.backslash_f.stylekit.StyleKitFFI.drawGoal( inputKey0.floatValue() , inputKey1.floatValue() , inputKey2.floatValue() , inputKey3.floatValue() , inputKey4.floatValue() );
+ java.lang.String val = com.backslash_f.stylekit.StyleKitFFI.drawGoal( inputKey0.floatValue() , inputKey1.floatValue() , inputKey2.floatValue() );
  
  			ret = new Object[]{val, new Double(0)};
  		return ret;

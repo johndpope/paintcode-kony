@@ -1043,14 +1043,14 @@
                 <contentOffsetY></contentOffsetY>
                 <contentSizeHeight></contentSizeHeight>
                 <contentSizeWidth></contentSizeWidth>
-                <height>118</height>
+                <height>181</height>
                 <left></left>
                 <maxHeight></maxHeight>
                 <maxWidth></maxWidth>
                 <minHeight></minHeight>
                 <minWidth></minWidth>
-                <preferredHeight>118</preferredHeight>
-                <preferredWidth>91</preferredWidth>
+                <preferredHeight>181</preferredHeight>
+                <preferredWidth>140</preferredWidth>
                 <propertyVsUnit>
                     <entry>
                         <key>Top</key>
@@ -1133,24 +1133,24 @@
                 <rowHeight>40</rowHeight>
                 <rowWidth>100</rowWidth>
                 <top></top>
-                <width>91</width>
-                <xlocation>180</xlocation>
-                <ylocation>166</ylocation>
+                <width>140</width>
+                <xlocation>155</xlocation>
+                <ylocation>135</ylocation>
                 <zOrder>1</zOrder>
             </flexConstraints>
             <widgetID>p2kwiet200713153720</widgetID>
             <location>
-                <x>180</x>
-                <y>166</y>
+                <x>155</x>
+                <y>135</y>
             </location>
             <createdGAVersion>6.5.0</createdGAVersion>
             <size>
-                <width>91</width>
-                <height>118</height>
+                <width>140</width>
+                <height>181</height>
             </size>
             <sizePercent>
                 <width>100</width>
-                <height>27</height>
+                <height>41</height>
             </sizePercent>
             <skinId>Skin Defaults</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
@@ -1907,7 +1907,7 @@
                 <verticalFill>1</verticalFill>
             </gridMetaData>
             <flexConstraints>
-                <bottom>20.0</bottom>
+                <bottom>10.0</bottom>
                 <centerX>50</centerX>
                 <centerY></centerY>
                 <contentOffsetX></contentOffsetX>
@@ -2006,14 +2006,14 @@
                 <top></top>
                 <width>60</width>
                 <xlocation>195</xlocation>
-                <ylocation>320</ylocation>
+                <ylocation>365</ylocation>
                 <zOrder>1</zOrder>
             </flexConstraints>
             <widgetID>p2kwiet200713153721</widgetID>
             <createdGAVersion>6.5.0</createdGAVersion>
             <location>
                 <x>195</x>
-                <y>320</y>
+                <y>365</y>
             </location>
             <size>
                 <width>60</width>
@@ -2745,7 +2745,7 @@
                         <exprMap>
                             <entry>
                                 <key>js</key>
-                                <value>var goalIcon = StyleKitFFI.drawGoal(91,118,16,7,0.45);
+                                <value>var goalIcon = StyleKitFFI.drawGoal(140,181,0.45);
 
 GoalIcon.goal.base64 = goalIcon;</value>
                             </entry>
@@ -2777,7 +2777,7 @@ GoalIcon.goal.base64 = goalIcon;</value>
                 <verticalFill>1</verticalFill>
             </gridMetaData>
             <flexConstraints>
-                <bottom>20.0</bottom>
+                <bottom>10.0</bottom>
                 <centerX>70.0</centerX>
                 <centerY></centerY>
                 <contentOffsetX></contentOffsetX>
@@ -2876,14 +2876,14 @@ GoalIcon.goal.base64 = goalIcon;</value>
                 <top></top>
                 <width>60</width>
                 <xlocation>285</xlocation>
-                <ylocation>320</ylocation>
+                <ylocation>365</ylocation>
                 <zOrder>1</zOrder>
             </flexConstraints>
             <widgetID>p2kwiet200713153722</widgetID>
             <createdGAVersion>6.5.0</createdGAVersion>
             <location>
                 <x>285</x>
-                <y>320</y>
+                <y>365</y>
             </location>
             <size>
                 <width>60</width>
@@ -3615,7 +3615,7 @@ GoalIcon.goal.base64 = goalIcon;</value>
                         <exprMap>
                             <entry>
                                 <key>js</key>
-                                <value>var goalIcon = StyleKitFFI.drawGoal(91,118,16,7,1);
+                                <value>var goalIcon = StyleKitFFI.drawGoal(140,181,1);
 
 GoalIcon.goal.base64 = goalIcon;</value>
                             </entry>
@@ -3647,7 +3647,7 @@ GoalIcon.goal.base64 = goalIcon;</value>
                 <verticalFill>1</verticalFill>
             </gridMetaData>
             <flexConstraints>
-                <bottom>20.0</bottom>
+                <bottom>10.0</bottom>
                 <centerX>30</centerX>
                 <centerY></centerY>
                 <contentOffsetX></contentOffsetX>
@@ -3746,14 +3746,14 @@ GoalIcon.goal.base64 = goalIcon;</value>
                 <top></top>
                 <width>60</width>
                 <xlocation>105</xlocation>
-                <ylocation>320</ylocation>
+                <ylocation>365</ylocation>
                 <zOrder>1</zOrder>
             </flexConstraints>
             <widgetID>p2kwiet200713153743</widgetID>
             <createdGAVersion>6.5.0</createdGAVersion>
             <location>
                 <x>105</x>
-                <y>320</y>
+                <y>365</y>
             </location>
             <size>
                 <width>60</width>
@@ -4485,7 +4485,7 @@ GoalIcon.goal.base64 = goalIcon;</value>
                         <exprMap>
                             <entry>
                                 <key>js</key>
-                                <value>var goalIcon = StyleKitFFI.drawGoal(91,118,16,7,0);
+                                <value>var goalIcon = StyleKitFFI.drawGoal(140,181,0);
 
 GoalIcon.goal.base64 = goalIcon;</value>
                             </entry>
