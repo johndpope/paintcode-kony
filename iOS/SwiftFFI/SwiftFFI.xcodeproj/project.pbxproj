@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		423996341E65DF3300E53B56 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423996331E65DF3300E53B56 /* Goal.swift */; };
+		423996341E65DF3300E53B56 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423996331E65DF3300E53B56 /* GoalView.swift */; };
 		423996381E65DF7700E53B56 /* FFIWraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 423996371E65DF7700E53B56 /* FFIWraper.m */; };
 		4278A80B1E6612CA000FE8D3 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278A80A1E6612CA000FE8D3 /* StyleKit.swift */; };
 		ED5874021E644885001168E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5874011E644885001168E3 /* AppDelegate.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		423996331E65DF3300E53B56 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = View/Goal.swift; sourceTree = "<group>"; };
+		423996331E65DF3300E53B56 /* GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalView.swift; path = View/GoalView.swift; sourceTree = "<group>"; };
 		423996371E65DF7700E53B56 /* FFIWraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFIWraper.m; path = FFI/FFIWraper.m; sourceTree = "<group>"; };
 		423996391E65DFA900E53B56 /* SwiftFFI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftFFI-Bridging-Header.h"; sourceTree = "<group>"; };
 		4239963A1E65DFBC00E53B56 /* FFIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFIWrapper.h; path = FFI/FFIWrapper.h; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		EDCEF9EC1E65A334001D5238 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				423996331E65DF3300E53B56 /* Goal.swift */,
+				423996331E65DF3300E53B56 /* GoalView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				423996381E65DF7700E53B56 /* FFIWraper.m in Sources */,
-				423996341E65DF3300E53B56 /* Goal.swift in Sources */,
+				423996341E65DF3300E53B56 /* GoalView.swift in Sources */,
 				ED5874041E644885001168E3 /* MainViewController.swift in Sources */,
 				4278A80B1E6612CA000FE8D3 /* StyleKit.swift in Sources */,
 				ED5874021E644885001168E3 /* AppDelegate.swift in Sources */,

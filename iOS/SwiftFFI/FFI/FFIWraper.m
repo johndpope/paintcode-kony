@@ -13,19 +13,13 @@
 
 + (NSString *)drawGoalWithWidth:(CGFloat)width
                          height:(CGFloat)height
-                       textSize:(CGFloat)textSize
-                     strokeSize:(CGFloat)strokeSize
                        progress:(CGFloat)progress {
     
-    CGSize size = CGSizeMake(width, height);
-    UIImage *goalImage = [StyleKit imageOfGoalWithImageSize:size
-                                               goalPercentTextSize:textSize
-                                          goalPercentageStrokeSize:strokeSize
-                                                      goalProgress:progress];
+    GoalView *goalView = [[GoalView alloc] initWithFrame: CGRectMake(0, 0, width, height)];
     
     // Kony requires us to encode the image to Base64 String, so in Kony we can:
     // "form.image2.base64 = imageEncodedToStringBase64".
-    return [self encodeToBase64String: goalImage];
+    return [self encodeToBase64String: goalView.image];
 }
 
 + (NSString *)encodeToBase64String:(UIImage *)image {
