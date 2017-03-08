@@ -2,7 +2,9 @@ package com.backslash_f.stylekit;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.PointF;
 import android.util.Base64;
+import android.widget.ImageView;
 
 import com.konylabs.android.KonyMain;
 
@@ -16,13 +18,17 @@ public class StyleKitFFI {
     public static String drawGoal(float width, float height, float progress) {
         Context context = KonyMain.getAppContext();
 
-        GoalView goalView = new GoalView(context);
-        goalView.progress = progress;
-
         // Kony requires us to encode the image to Base64 String, so in Kony we can:
         // "form.image2.base64 = imageEncodedToStringBase64".
         ByteArrayOutputStream byteArrayOS = new ByteArrayOutputStream();
-        goalView.image().compress(Bitmap.CompressFormat.PNG, 100, byteArrayOS);
+
+        Bitmap imageOfGoal = StyleKit.imageOfGoal(
+                context,
+                new PointF(width, height),
+                progress
+        );
+        imageOfGoal.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOS);
+
         return Base64.encodeToString(byteArrayOS.toByteArray(), Base64.DEFAULT);
     }
 }

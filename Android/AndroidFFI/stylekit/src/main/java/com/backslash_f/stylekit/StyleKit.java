@@ -2,6 +2,7 @@ package com.backslash_f.stylekit;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -45,8 +46,7 @@ public class StyleKit {
     
     private static class CacheForGoal {
         private static Paint paint = new Paint();
-        private static RectF originalFrame = new RectF(0f, 0f, 68f, 88f);
-        private static RectF resizedFrame = new RectF();
+        private static RectF goalGroup = new RectF();
         private static RectF circleBackgroundBezierRect = new RectF();
         private static Path circleBackgroundBezierPath = new Path();
         private static RectF circleProgressStrokeRect = new RectF();
@@ -58,6 +58,7 @@ public class StyleKit {
         private static PaintCodeStaticLayout goalPercentageTextStaticLayout = new PaintCodeStaticLayout();
         private static RectF goalIconFlightBezierRect = new RectF();
         private static Path goalIconFlightBezierPath = new Path();
+        private static RectF starsGroup = new RectF();
         private static RectF star3BezierRect = new RectF();
         private static Path star3BezierPath = new Path();
         private static RectF star2BezierRect = new RectF();
@@ -66,33 +67,32 @@ public class StyleKit {
         private static Path star1BezierPath = new Path();
     }
     
-    public static void drawGoal(Canvas canvas, Context context, float goalProgress) {
-        StyleKit.drawGoal(canvas, context, new RectF(0f, 0f, 68f, 88f), ResizingBehavior.AspectFit, goalProgress);
-    }
     
-    public static void drawGoal(Canvas canvas, Context context, RectF targetFrame, ResizingBehavior resizing, float goalProgress) {
+    public static void drawGoal(Canvas canvas, Context context, RectF frame, float goalProgress) {
         // General Declarations
         Paint paint = CacheForGoal.paint;
         
         // Local Variables
-        float goalPercentNumber = goalProgress * 100f;
-        String goalPercentText = String.valueOf((float) Math.round(goalPercentNumber)) + "%";
         boolean goalPercentageVisible = goalProgress == 0f ? false : true;
         float goalResultAngle = -1f * goalProgress * 279f;
         boolean goalCompleted = goalProgress == 1f ? true : false;
-        
-        // Resize to Target Frame
-        canvas.save();
-        RectF resizedFrame = CacheForGoal.resizedFrame;
-        StyleKit.resizingBehaviorApply(resizing, CacheForGoal.originalFrame, targetFrame, resizedFrame);
-        canvas.translate(resizedFrame.left, resizedFrame.top);
-        canvas.scale(resizedFrame.width() / 68f, resizedFrame.height() / 88f);
+        float goalPercentNumber = goalProgress * 100f;
+        String goalPercentText = String.valueOf((float) Math.round(goalPercentNumber)) + "%";
         
         // GoalGroup
         {
+            RectF goalGroup = CacheForGoal.goalGroup;
+            goalGroup.set(frame.left + 8f,
+                frame.top + 4.25f,
+                frame.left + 8f + (float) Math.floor((frame.width() - 8f) * 0.93939f + 0.5f),
+                frame.top + 4.25f + (float) Math.floor((frame.height() - 4.25f) * 0.9775f - 0.25f) + 0.75f);
+            
             // CircleBackgroundBezier
             RectF circleBackgroundBezierRect = CacheForGoal.circleBackgroundBezierRect;
-            circleBackgroundBezierRect.set(5f, 21f, 63f, 79f);
+            circleBackgroundBezierRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.01613f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.23453f - 0.25f) + 0.75f,
+                goalGroup.left + (float) Math.floor(goalGroup.width() * 0.96774f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.90791f - 0.25f) + 0.75f);
             Path circleBackgroundBezierPath = CacheForGoal.circleBackgroundBezierPath;
             circleBackgroundBezierPath.reset();
             circleBackgroundBezierPath.addOval(circleBackgroundBezierRect, Path.Direction.CW);
@@ -110,14 +110,17 @@ public class StyleKit {
             // CircleProgressStroke
             if (goalPercentageVisible) {
                 RectF circleProgressStrokeRect = CacheForGoal.circleProgressStrokeRect;
-                circleProgressStrokeRect.set(5f, 21f, 63f, 79f);
+                circleProgressStrokeRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.01613f + 0.5f) + 0f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.23453f - 0.25f) + 0.75f,
+                    goalGroup.left + (float) Math.floor(goalGroup.width() * 0.96774f + 0.5f) + 0f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.90791f - 0.25f) + 0.75f);
                 Path circleProgressStrokePath = CacheForGoal.circleProgressStrokePath;
                 circleProgressStrokePath.reset();
                 circleProgressStrokePath.addArc(circleProgressStrokeRect, 133f, -(goalResultAngle + 227f) - 133f + (-(goalResultAngle + 227f) < 133f ? 360f * (float) Math.ceil((133f + (goalResultAngle + 227f)) / 360f) : 0f));
                 
                 paint.reset();
                 paint.setFlags(Paint.ANTI_ALIAS_FLAG);
-                paint.setStrokeWidth(7f);
+                paint.setStrokeWidth(10f);
                 paint.setStrokeCap(Paint.Cap.ROUND);
                 paint.setStrokeMiter(10f);
                 canvas.save();
@@ -129,32 +132,35 @@ public class StyleKit {
             
             // BaseBezier
             RectF baseBezierRect = CacheForGoal.baseBezierRect;
-            baseBezierRect.set(4f, 69f, 65f, 87f);
+            baseBezierRect.set(goalGroup.left,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.79009f + 0.22f) + 0.28f,
+                goalGroup.left + (float) Math.floor(goalGroup.width() + 0.5f),
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 1f - 0.25f) + 0.75f);
             Path baseBezierPath = CacheForGoal.baseBezierPath;
             baseBezierPath.reset();
-            baseBezierPath.moveTo(15.81f, 69f);
-            baseBezierPath.lineTo(55.83f, 69f);
-            baseBezierPath.cubicTo(55.37f, 69f, 57.35f, 69f, 59.14f, 69.59f);
-            baseBezierPath.lineTo(59.49f, 69.67f);
-            baseBezierPath.cubicTo(62.8f, 70.88f, 65f, 74.03f, 65f, 77.55f);
-            baseBezierPath.cubicTo(65f, 78f, 65f, 78f, 65f, 78f);
-            baseBezierPath.lineTo(65f, 78f);
-            baseBezierPath.lineTo(65f, 78f);
-            baseBezierPath.lineTo(65f, 78.45f);
-            baseBezierPath.cubicTo(65f, 81.97f, 62.8f, 85.12f, 59.49f, 86.33f);
-            baseBezierPath.cubicTo(57.35f, 87f, 55.37f, 87f, 51.41f, 87f);
-            baseBezierPath.lineTo(13.17f, 87f);
-            baseBezierPath.cubicTo(13.63f, 87f, 11.65f, 87f, 9.86f, 86.41f);
-            baseBezierPath.lineTo(9.51f, 86.33f);
-            baseBezierPath.cubicTo(6.2f, 85.12f, 4f, 81.97f, 4f, 78.45f);
-            baseBezierPath.cubicTo(4f, 78f, 4f, 78f, 4f, 78f);
-            baseBezierPath.lineTo(4f, 78f);
-            baseBezierPath.lineTo(4f, 78f);
-            baseBezierPath.lineTo(4f, 77.55f);
-            baseBezierPath.cubicTo(4f, 74.03f, 6.2f, 70.88f, 9.51f, 69.67f);
-            baseBezierPath.cubicTo(11.65f, 69f, 13.63f, 69f, 17.59f, 69f);
-            baseBezierPath.lineTo(13.17f, 69f);
-            baseBezierPath.lineTo(15.81f, 69f);
+            baseBezierPath.moveTo(goalGroup.left + goalGroup.width() * 0.19361f, goalGroup.top + goalGroup.height() * 0.79009f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.84964f, goalGroup.top + goalGroup.height() * 0.79009f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.84217f, goalGroup.top + goalGroup.height() * 0.79009f, goalGroup.left + goalGroup.width() * 0.87464f, goalGroup.top + goalGroup.height() * 0.79009f, goalGroup.left + goalGroup.width() * 0.90392f, goalGroup.top + goalGroup.height() * 0.79696f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.9096f, goalGroup.top + goalGroup.height() * 0.79795f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.96387f, goalGroup.top + goalGroup.height() * 0.812f, goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.84871f, goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.8898f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.89504f, goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.89504f, goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.90029f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 1f, goalGroup.top + goalGroup.height() * 0.94138f, goalGroup.left + goalGroup.width() * 0.96387f, goalGroup.top + goalGroup.height() * 0.97808f, goalGroup.left + goalGroup.width() * 0.9096f, goalGroup.top + goalGroup.height() * 0.99214f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.87464f, goalGroup.top + goalGroup.height(), goalGroup.left + goalGroup.width() * 0.84217f, goalGroup.top + goalGroup.height(), goalGroup.left + goalGroup.width() * 0.77723f, goalGroup.top + goalGroup.height());
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.15036f, goalGroup.top + goalGroup.height());
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.15783f, goalGroup.top + goalGroup.height(), goalGroup.left + goalGroup.width() * 0.12536f, goalGroup.top + goalGroup.height(), goalGroup.left + goalGroup.width() * 0.09608f, goalGroup.top + goalGroup.height() * 0.99313f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.0904f, goalGroup.top + goalGroup.height() * 0.99214f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.03613f, goalGroup.top + goalGroup.height() * 0.97808f, goalGroup.left + goalGroup.width() * -0f, goalGroup.top + goalGroup.height() * 0.94138f, goalGroup.left, goalGroup.top + goalGroup.height() * 0.90029f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.89504f, goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.89504f, goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.89504f);
+            baseBezierPath.lineTo(goalGroup.left, goalGroup.top + goalGroup.height() * 0.8898f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0f, goalGroup.top + goalGroup.height() * 0.84871f, goalGroup.left + goalGroup.width() * 0.03613f, goalGroup.top + goalGroup.height() * 0.812f, goalGroup.left + goalGroup.width() * 0.0904f, goalGroup.top + goalGroup.height() * 0.79795f);
+            baseBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.12536f, goalGroup.top + goalGroup.height() * 0.79009f, goalGroup.left + goalGroup.width() * 0.15783f, goalGroup.top + goalGroup.height() * 0.79009f, goalGroup.left + goalGroup.width() * 0.22277f, goalGroup.top + goalGroup.height() * 0.79009f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.15036f, goalGroup.top + goalGroup.height() * 0.79009f);
+            baseBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.19361f, goalGroup.top + goalGroup.height() * 0.79009f);
             baseBezierPath.close();
             
             paint.reset();
@@ -165,12 +171,19 @@ public class StyleKit {
             
             // GoalPercentageText
             RectF goalPercentageTextRect = CacheForGoal.goalPercentageTextRect;
-            goalPercentageTextRect.set(6f, 73f, 64f, 83f);
+            goalPercentageTextRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.03226f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.83885f - 0.25f) + 0.75f,
+                goalGroup.left + (float) Math.floor(goalGroup.width() * 0.98387f + 0.5f) + 0f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.95396f - 0.25f) + 0.75f);
             TextPaint goalPercentageTextTextPaint = CacheForGoal.goalPercentageTextTextPaint;
             goalPercentageTextTextPaint.reset();
             goalPercentageTextTextPaint.setColor(StyleKit.white);
             goalPercentageTextTextPaint.setTypeface(Typeface.create((String) null, Typeface.NORMAL));
-            goalPercentageTextTextPaint.setTextSize(12f);
+            goalPercentageTextTextPaint.setTextSize(22f);
+
+            // Fix for a PaintCode issue. Will be fixed in the next version.
+            goalPercentageTextTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
+
             StaticLayout goalPercentageTextStaticLayout = CacheForGoal.goalPercentageTextStaticLayout.get((int) goalPercentageTextRect.width(), Layout.Alignment.ALIGN_CENTER, goalPercentText, goalPercentageTextTextPaint);
             canvas.save();
             canvas.clipRect(goalPercentageTextRect);
@@ -180,28 +193,31 @@ public class StyleKit {
             
             // GoalIconFlightBezier
             RectF goalIconFlightBezierRect = CacheForGoal.goalIconFlightBezierRect;
-            goalIconFlightBezierRect.set(23.09f, 39.9f, 44f, 60f);
+            goalIconFlightBezierRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.3129f - 0.3f) + 0.8f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.45072f + 0.19f) + 0.31f,
+                goalGroup.left + (float) Math.floor(goalGroup.width() * 0.65574f + 0.19f) + 0.31f,
+                goalGroup.top + (float) Math.floor(goalGroup.height() * 0.68513f + 0.46f) + 0.04f);
             Path goalIconFlightBezierPath = CacheForGoal.goalIconFlightBezierPath;
             goalIconFlightBezierPath.reset();
-            goalIconFlightBezierPath.moveTo(42.57f, 57.72f);
-            goalIconFlightBezierPath.lineTo(44f, 56.34f);
-            goalIconFlightBezierPath.lineTo(38.55f, 47.88f);
-            goalIconFlightBezierPath.cubicTo(43.29f, 43.27f, 43.82f, 41.56f, 43.05f, 40.81f);
-            goalIconFlightBezierPath.cubicTo(42.28f, 40.07f, 40.49f, 40.58f, 35.7f, 45.14f);
-            goalIconFlightBezierPath.lineTo(26.89f, 39.9f);
-            goalIconFlightBezierPath.lineTo(25.46f, 41.27f);
-            goalIconFlightBezierPath.lineTo(32.65f, 48.18f);
-            goalIconFlightBezierPath.cubicTo(30.42f, 50.51f, 28.23f, 52.99f, 26.76f, 54.9f);
-            goalIconFlightBezierPath.lineTo(23.9f, 53.73f);
-            goalIconFlightBezierPath.lineTo(23.09f, 54.52f);
-            goalIconFlightBezierPath.lineTo(25.44f, 56.77f);
-            goalIconFlightBezierPath.cubicTo(24.99f, 57.5f, 24.81f, 58f, 24.99f, 58.17f);
-            goalIconFlightBezierPath.cubicTo(25.17f, 58.34f, 25.69f, 58.17f, 26.44f, 57.74f);
-            goalIconFlightBezierPath.lineTo(28.79f, 60f);
-            goalIconFlightBezierPath.lineTo(29.61f, 59.22f);
-            goalIconFlightBezierPath.lineTo(28.39f, 56.47f);
-            goalIconFlightBezierPath.cubicTo(30.39f, 55.06f, 32.96f, 52.95f, 35.38f, 50.8f);
-            goalIconFlightBezierPath.lineTo(42.57f, 57.72f);
+            goalIconFlightBezierPath.moveTo(goalGroup.left + goalGroup.width() * 0.63236f, goalGroup.top + goalGroup.height() * 0.65849f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.65574f, goalGroup.top + goalGroup.height() * 0.6425f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.56633f, goalGroup.top + goalGroup.height() * 0.54377f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.64414f, goalGroup.top + goalGroup.height() * 0.49008f, goalGroup.left + goalGroup.width() * 0.65283f, goalGroup.top + goalGroup.height() * 0.47005f, goalGroup.left + goalGroup.width() * 0.64016f, goalGroup.top + goalGroup.height() * 0.46137f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.62746f, goalGroup.top + goalGroup.height() * 0.45271f, goalGroup.left + goalGroup.width() * 0.59818f, goalGroup.top + goalGroup.height() * 0.45865f, goalGroup.left + goalGroup.width() * 0.51965f, goalGroup.top + goalGroup.height() * 0.51185f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.37525f, goalGroup.top + goalGroup.height() * 0.45072f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.35187f, goalGroup.top + goalGroup.height() * 0.46671f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.46973f, goalGroup.top + goalGroup.height() * 0.5473f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.43311f, goalGroup.top + goalGroup.height() * 0.57443f, goalGroup.left + goalGroup.width() * 0.39724f, goalGroup.top + goalGroup.height() * 0.60333f, goalGroup.left + goalGroup.width() * 0.37304f, goalGroup.top + goalGroup.height() * 0.62567f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.32626f, goalGroup.top + goalGroup.height() * 0.61207f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.3129f, goalGroup.top + goalGroup.height() * 0.6212f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.3514f, goalGroup.top + goalGroup.height() * 0.64751f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.34415f, goalGroup.top + goalGroup.height() * 0.65599f, goalGroup.left + goalGroup.width() * 0.34117f, goalGroup.top + goalGroup.height() * 0.66183f, goalGroup.left + goalGroup.width() * 0.34407f, goalGroup.top + goalGroup.height() * 0.66383f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.34699f, goalGroup.top + goalGroup.height() * 0.66581f, goalGroup.left + goalGroup.width() * 0.35552f, goalGroup.top + goalGroup.height() * 0.66376f, goalGroup.left + goalGroup.width() * 0.36792f, goalGroup.top + goalGroup.height() * 0.65881f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.40641f, goalGroup.top + goalGroup.height() * 0.68513f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.41976f, goalGroup.top + goalGroup.height() * 0.676f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.39987f, goalGroup.top + goalGroup.height() * 0.64401f);
+            goalIconFlightBezierPath.cubicTo(goalGroup.left + goalGroup.width() * 0.43254f, goalGroup.top + goalGroup.height() * 0.62747f, goalGroup.left + goalGroup.width() * 0.47481f, goalGroup.top + goalGroup.height() * 0.60294f, goalGroup.left + goalGroup.width() * 0.51449f, goalGroup.top + goalGroup.height() * 0.5779f);
+            goalIconFlightBezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.63236f, goalGroup.top + goalGroup.height() * 0.65849f);
             goalIconFlightBezierPath.close();
             
             paint.reset();
@@ -213,22 +229,31 @@ public class StyleKit {
             
             // StarsGroup
             if (goalCompleted) {
+                RectF starsGroup = CacheForGoal.starsGroup;
+                starsGroup.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.1623f + 0.37f) + 0.13f,
+                    goalGroup.top,
+                    goalGroup.left + (float) Math.floor(goalGroup.width() * 0.82157f - 0.38f) + 0.88f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.1705f - 0.13f) + 0.63f);
+                
                 // Star3Bezier
                 RectF star3BezierRect = CacheForGoal.star3BezierRect;
-                star3BezierRect.set(44.13f, 6.13f, 53.88f, 15.88f);
+                star3BezierRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.65423f + 0.37f) + 0.13f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.05683f - 0.38f) + 0.88f,
+                    goalGroup.left + (float) Math.floor(goalGroup.width() * 0.82157f - 0.38f) + 0.88f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.1705f - 0.13f) + 0.63f);
                 Path star3BezierPath = CacheForGoal.star3BezierPath;
                 star3BezierPath.reset();
-                star3BezierPath.moveTo(49f, 6.13f);
-                star3BezierPath.lineTo(50.43f, 9.03f);
-                star3BezierPath.lineTo(53.64f, 9.49f);
-                star3BezierPath.lineTo(51.32f, 11.75f);
-                star3BezierPath.lineTo(51.87f, 14.94f);
-                star3BezierPath.lineTo(49f, 13.44f);
-                star3BezierPath.lineTo(46.13f, 14.94f);
-                star3BezierPath.lineTo(46.68f, 11.75f);
-                star3BezierPath.lineTo(44.36f, 9.49f);
-                star3BezierPath.lineTo(47.57f, 9.03f);
-                star3BezierPath.lineTo(49f, 6.13f);
+                star3BezierPath.moveTo(goalGroup.left + goalGroup.width() * 0.7379f, goalGroup.top + goalGroup.height() * 0.05683f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.76249f, goalGroup.top + goalGroup.height() * 0.09068f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.81748f, goalGroup.top + goalGroup.height() * 0.09611f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.77769f, goalGroup.top + goalGroup.height() * 0.12245f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.78708f, goalGroup.top + goalGroup.height() * 0.15965f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.7379f, goalGroup.top + goalGroup.height() * 0.14209f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.68872f, goalGroup.top + goalGroup.height() * 0.15965f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.69812f, goalGroup.top + goalGroup.height() * 0.12245f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.65833f, goalGroup.top + goalGroup.height() * 0.09611f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.71331f, goalGroup.top + goalGroup.height() * 0.09068f);
+                star3BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.7379f, goalGroup.top + goalGroup.height() * 0.05683f);
                 star3BezierPath.close();
                 
                 paint.reset();
@@ -239,20 +264,23 @@ public class StyleKit {
                 
                 // Star2Bezier
                 RectF star2BezierRect = CacheForGoal.star2BezierRect;
-                star2BezierRect.set(27.25f, 1.25f, 40.75f, 14.75f);
+                star2BezierRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.38105f + 0.25f) + 0.25f,
+                    goalGroup.top,
+                    goalGroup.left + (float) Math.floor(goalGroup.width() * 0.60282f - 0.25f) + 0.75f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.15827f) + 0.5f);
                 Path star2BezierPath = CacheForGoal.star2BezierPath;
                 star2BezierPath.reset();
-                star2BezierPath.moveTo(34f, 1.25f);
-                star2BezierPath.lineTo(35.98f, 5.27f);
-                star2BezierPath.lineTo(40.42f, 5.91f);
-                star2BezierPath.lineTo(37.21f, 9.04f);
-                star2BezierPath.lineTo(37.97f, 13.46f);
-                star2BezierPath.lineTo(34f, 11.38f);
-                star2BezierPath.lineTo(30.03f, 13.46f);
-                star2BezierPath.lineTo(30.79f, 9.04f);
-                star2BezierPath.lineTo(27.58f, 5.91f);
-                star2BezierPath.lineTo(32.02f, 5.27f);
-                star2BezierPath.lineTo(34f, 1.25f);
+                star2BezierPath.moveTo(goalGroup.left + goalGroup.width() * 0.49194f, goalGroup.top);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.52452f, goalGroup.top + goalGroup.height() * 0.04713f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.5974f, goalGroup.top + goalGroup.height() * 0.05468f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.54467f, goalGroup.top + goalGroup.height() * 0.09136f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.55711f, goalGroup.top + goalGroup.height() * 0.14316f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.49194f, goalGroup.top + goalGroup.height() * 0.11871f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.42676f, goalGroup.top + goalGroup.height() * 0.14316f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.43921f, goalGroup.top + goalGroup.height() * 0.09136f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.38648f, goalGroup.top + goalGroup.height() * 0.05468f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.45935f, goalGroup.top + goalGroup.height() * 0.04713f);
+                star2BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.49194f, goalGroup.top);
                 star2BezierPath.close();
                 
                 paint.reset();
@@ -263,20 +291,23 @@ public class StyleKit {
                 
                 // Star1Bezier
                 RectF star1BezierRect = CacheForGoal.star1BezierRect;
-                star1BezierRect.set(14.13f, 6.13f, 23.88f, 15.88f);
+                star1BezierRect.set(goalGroup.left + (float) Math.floor(goalGroup.width() * 0.1623f + 0.37f) + 0.13f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.05683f - 0.38f) + 0.88f,
+                    goalGroup.left + (float) Math.floor(goalGroup.width() * 0.32964f - 0.38f) + 0.88f,
+                    goalGroup.top + (float) Math.floor(goalGroup.height() * 0.1705f - 0.13f) + 0.63f);
                 Path star1BezierPath = CacheForGoal.star1BezierPath;
                 star1BezierPath.reset();
-                star1BezierPath.moveTo(19f, 6.13f);
-                star1BezierPath.lineTo(20.43f, 9.03f);
-                star1BezierPath.lineTo(23.64f, 9.49f);
-                star1BezierPath.lineTo(21.32f, 11.75f);
-                star1BezierPath.lineTo(21.87f, 14.94f);
-                star1BezierPath.lineTo(19f, 13.44f);
-                star1BezierPath.lineTo(16.13f, 14.94f);
-                star1BezierPath.lineTo(16.68f, 11.75f);
-                star1BezierPath.lineTo(14.36f, 9.49f);
-                star1BezierPath.lineTo(17.57f, 9.03f);
-                star1BezierPath.lineTo(19f, 6.13f);
+                star1BezierPath.moveTo(goalGroup.left + goalGroup.width() * 0.24597f, goalGroup.top + goalGroup.height() * 0.05683f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.27056f, goalGroup.top + goalGroup.height() * 0.09068f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.32554f, goalGroup.top + goalGroup.height() * 0.09611f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.28575f, goalGroup.top + goalGroup.height() * 0.12245f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.29515f, goalGroup.top + goalGroup.height() * 0.15965f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.24597f, goalGroup.top + goalGroup.height() * 0.14209f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.19679f, goalGroup.top + goalGroup.height() * 0.15965f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.20618f, goalGroup.top + goalGroup.height() * 0.12245f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.16639f, goalGroup.top + goalGroup.height() * 0.09611f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.22138f, goalGroup.top + goalGroup.height() * 0.09068f);
+                star1BezierPath.lineTo(goalGroup.left + goalGroup.width() * 0.24597f, goalGroup.top + goalGroup.height() * 0.05683f);
                 star1BezierPath.close();
                 
                 paint.reset();
@@ -286,18 +317,16 @@ public class StyleKit {
                 canvas.drawPath(star1BezierPath, paint);
             }
         }
-        
-        canvas.restore();
     }
     
     
     // Canvas Images
     // Tab
     
-    public static Bitmap imageOfGoal(Context context, float goalProgress) {
-        Bitmap imageOfGoal = Bitmap.createBitmap(68, 88, Bitmap.Config.ARGB_8888);
+    public static Bitmap imageOfGoal(Context context, PointF imageSize, float goalProgress) {
+        Bitmap imageOfGoal = Bitmap.createBitmap((int) imageSize.x, (int) imageSize.y, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(imageOfGoal);
-        StyleKit.drawGoal(canvas, context, goalProgress);
+        StyleKit.drawGoal(canvas, context, new RectF(0f, 0f, imageSize.x, imageSize.y), goalProgress);
         
         return imageOfGoal;
     }

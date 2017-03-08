@@ -21,7 +21,7 @@
         android:id="@+id/paintCodeView"
         class="com.backslash_f.stylekit.GoalView"
         android:layout_width="140dp"
-        android:layout_height="181dp"
+        android:layout_height="182dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
@@ -32,11 +32,11 @@
     <ImageView
         android:id="@+id/paintCodeImage"
         android:layout_width="140dp"
-        android:layout_height="181dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_height="182dp"
         android:layerType="software"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

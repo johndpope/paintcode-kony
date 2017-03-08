@@ -1,5 +1,6 @@
 package com.backslash_f.androidffi;
 
+import android.graphics.PointF;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.backslash_f.stylekit.GoalView;
+import com.backslash_f.stylekit.StyleKit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +21,11 @@ public class MainActivity extends AppCompatActivity {
         GoalView goalView = (GoalView) findViewById(R.id.paintCodeView);
         goalView.progress = 1.0f;
 
-        ImageView img = (ImageView) findViewById(R.id.paintCodeImage);
-        img.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        img.setImageBitmap(goalView.getBitmap());
+        ImageView imgView = (ImageView) findViewById(R.id.paintCodeImage);
+        imgView.setImageBitmap(StyleKit.imageOfGoal(
+                getApplicationContext(),
+                new PointF(140f, 182f),
+                goalView.progress
+        ));
     }
 }

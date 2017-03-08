@@ -15,12 +15,10 @@
                          height:(CGFloat)height
                        progress:(CGFloat)progress {
     
-    GoalView *goalView = [[GoalView alloc] initWithFrame: CGRectMake(0, 0, width, height)];
-    goalView.progress = progress;
-    
     // Kony requires us to encode the image to Base64 String, so in Kony we can:
     // "form.image2.base64 = imageEncodedToStringBase64".
-    return [self encodeToBase64String: goalView.image];
+    return [self encodeToBase64String: [StyleKit imageOfGoalWithImageSize: CGSizeMake(width, height)
+                                                             goalProgress: progress]];
 }
 
 + (NSString *)encodeToBase64String:(UIImage *)image {

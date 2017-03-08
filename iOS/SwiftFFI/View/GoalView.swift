@@ -20,26 +20,7 @@ import UIKit
     override func draw(_ rect: CGRect) {
         StyleKit.drawGoal(
             frame: rect,
-            resizing: .aspectFit,
             goalProgress: progress
         )
-    }
-    
-    // Pixel-based.
-    func image() -> UIImage {
-        
-        let size: CGSize = CGSize(width: frame.size.width, height: frame.size.height)
-        
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        StyleKit.drawGoal(
-            frame: CGRect(origin: CGPoint.zero, size: size),
-            resizing: .aspectFit,
-            goalProgress: progress
-        )
-        
-        let imageOfGoal = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        
-        return imageOfGoal
     }
 }

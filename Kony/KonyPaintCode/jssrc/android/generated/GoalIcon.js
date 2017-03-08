@@ -9,25 +9,25 @@ function GoalIcon_GoalIcon_preshow_seq0(eventobject) {
 function GoalIcon_GoalIcon_postshow_seq0(eventobject) {};
 
 function GoalIcon_button45_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 0.45);
+    var goalIcon = StyleKitFFI.drawGoal(140, 181, 0.45);
     GoalIcon.goal.base64 = goalIcon;
 };
 
 function GoalIcon_button100_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 1);
+    var goalIcon = StyleKitFFI.drawGoal(140, 181, 1);
     GoalIcon.goal.base64 = goalIcon;
 };
 
 function GoalIcon_button0_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var goalIcon = StyleKitFFI.drawGoal(91, 118, 16, 7, 0);
+    var goalIcon = StyleKitFFI.drawGoal(140, 181, 0);
     GoalIcon.goal.base64 = goalIcon;
 };
 
 function addWidgetsGoalIcon() {
     var goal = new kony.ui.Image2({
         "id": "goal",
-        "width": "91dp",
-        "height": "118dp",
+        "width": "140dp",
+        "height": "181dp",
         "centerX": "50%",
         "centerY": "50%",
         "zIndex": 1,
@@ -40,11 +40,11 @@ function addWidgetsGoalIcon() {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "marginInPixel": false,
         "paddingInPixel": false,
-        "containerWeight": 27
+        "containerWeight": 41
     }, {});
     var button45 = new kony.ui.Button({
         "id": "button45",
-        "bottom": "20.0%",
+        "bottom": "10.0%",
         "width": "60dp",
         "height": "40dp",
         "centerX": "50%",
@@ -64,7 +64,7 @@ function addWidgetsGoalIcon() {
     }, {});
     var button100 = new kony.ui.Button({
         "id": "button100",
-        "bottom": "20.0%",
+        "bottom": "10.0%",
         "width": "60dp",
         "height": "40dp",
         "centerX": "70.0%",
@@ -84,7 +84,7 @@ function addWidgetsGoalIcon() {
     }, {});
     var button0 = new kony.ui.Button({
         "id": "button0",
-        "bottom": "20.0%",
+        "bottom": "10.0%",
         "width": "60dp",
         "height": "40dp",
         "centerX": "30%",
