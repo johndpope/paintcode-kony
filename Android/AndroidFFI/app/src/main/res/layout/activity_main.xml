@@ -18,21 +18,25 @@
         android:id="@+id/textView" />
 
     <view
-        class="com.backslash_f.androidffi.GoalView"
         android:id="@+id/paintCodeView"
+        class="com.backslash_f.stylekit.GoalView"
+        android:layout_width="140dp"
+        android:layout_height="181dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_width="84dp"
-        android:layout_height="108dp"
         android:adjustViewBounds="false"
-        android:alwaysDrawnWithCache="false" />
+        android:alwaysDrawnWithCache="false"
+        android:layerType="software" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/paintCodeImage"
-        android:layout_below="@+id/paintCodeView"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="140dp"
+        android:layout_height="181dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layerType="software"
+        app:srcCompat="@mipmap/ic_launcher" />
 
 </RelativeLayout>

@@ -1,11 +1,12 @@
 package com.backslash_f.androidffi;
 
-import android.graphics.PointF;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
-import com.backslash_f.stylekit.StyleKit;
+import com.backslash_f.stylekit.GoalView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,14 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Test PaintCode image creation.
+        // Test image creation.
+        GoalView goalView = (GoalView) findViewById(R.id.paintCodeView);
+        goalView.progress = 1.0f;
+
         ImageView img = (ImageView) findViewById(R.id.paintCodeImage);
-        img.setImageBitmap(StyleKit.imageOfGoal(
-                this.getApplicationContext(),
-                new PointF(310f, 400f),
-                36f,
-                14f,
-                0.38f
-        ));
+        img.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        img.setImageBitmap(goalView.getBitmap());
     }
 }
