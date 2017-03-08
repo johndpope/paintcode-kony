@@ -454,7 +454,7 @@
     <attributes name="tcbjs480basefontsize" value="10"/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="ACCESS_LOCATION_EXTRA_COMMANDS" value="false"/>
-    <attributes name="andapplicationattrs" value=""/>
+    <attributes name="andapplicationattrs" value="android:hardwareAccelerated=&quot;true&quot;"/>
     <attributes name="BRICK" value="false"/>
     <attributes name="WP8_ID_CAP_PUSH_NOTIFICATION" value="true"/>
     <attributes name="enablelocalnotifications" value="false"/>
