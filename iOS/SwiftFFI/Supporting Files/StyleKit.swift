@@ -31,7 +31,7 @@ public class StyleKit : NSObject {
 
     //// Drawing Methods
 
-    public dynamic class func drawGoal(frame: CGRect = CGRect(x: 0, y: -0, width: 140, height: 182), goalProgress: CGFloat = 1) {
+    public dynamic class func drawGoal(frame: CGRect = CGRect(x: 0, y: -0, width: 140, height: 182), goalProgress: CGFloat = 0.853) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -203,7 +203,7 @@ public class StyleKit : NSObject {
 
     //// Generated Images
 
-    public dynamic class func imageOfGoal(imageSize: CGSize = CGSize(width: 140, height: 182), goalProgress: CGFloat = 1) -> UIImage {
+    public dynamic class func imageOfGoal(imageSize: CGSize = CGSize(width: 140, height: 182), goalProgress: CGFloat = 0.853) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
             StyleKit.drawGoal(frame: CGRect(x: 0, y: 0, width: imageSize.width, height: imageSize.height), goalProgress: goalProgress)
 

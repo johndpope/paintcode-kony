@@ -73,11 +73,11 @@ public class StyleKit {
         Paint paint = CacheForGoal.paint;
         
         // Local Variables
-        boolean goalPercentageVisible = goalProgress == 0f ? false : true;
-        float goalResultAngle = -1f * goalProgress * 279f;
         boolean goalCompleted = goalProgress == 1f ? true : false;
         float goalPercentNumber = goalProgress * 100f;
         String goalPercentText = String.valueOf((float) Math.round(goalPercentNumber)) + "%";
+        boolean goalPercentageVisible = goalProgress == 0f ? false : true;
+        float goalResultAngle = -1f * goalProgress * 279f;
         
         // GoalGroup
         {
@@ -99,7 +99,7 @@ public class StyleKit {
             
             paint.reset();
             paint.setFlags(Paint.ANTI_ALIAS_FLAG);
-            paint.setStrokeWidth(7f);
+            paint.setStrokeWidth(10f);
             paint.setStrokeMiter(10f);
             canvas.save();
             paint.setStyle(Paint.Style.STROKE);
@@ -181,7 +181,6 @@ public class StyleKit {
             goalPercentageTextTextPaint.setTypeface(Typeface.create((String) null, Typeface.NORMAL));
             goalPercentageTextTextPaint.setTextSize(22f);
 
-            // Fix for a PaintCode issue. Will be fixed in the next version.
             goalPercentageTextTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 
             StaticLayout goalPercentageTextStaticLayout = CacheForGoal.goalPercentageTextStaticLayout.get((int) goalPercentageTextRect.width(), Layout.Alignment.ALIGN_CENTER, goalPercentText, goalPercentageTextTextPaint);
