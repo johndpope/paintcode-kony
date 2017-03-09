@@ -17,8 +17,10 @@
     
     // Kony requires us to encode the image to Base64 String, so in Kony we can:
     // "form.image2.base64 = imageEncodedToStringBase64".
-    return [self encodeToBase64String: [StyleKit imageOfGoalWithImageSize: CGSizeMake(width, height)
-                                                             goalProgress: progress]];
+    return [self encodeToBase64String:
+            [StyleKit imageOfResizableGoalWithImageSize: CGSizeMake(width, height)
+                                  resizableGoalProgress: progress]
+            ];
 }
 
 + (NSString *)encodeToBase64String:(UIImage *)image {

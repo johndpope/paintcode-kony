@@ -119,8 +119,8 @@ function addWidgetsGoalIcon() {
     });
     var performanceButton = new kony.ui.Button({
         "id": "performanceButton",
-        "top": "0dp",
-        "right": "0",
+        "top": "10dp",
+        "right": "10",
         "width": "120dp",
         "height": "40dp",
         "zIndex": 1,

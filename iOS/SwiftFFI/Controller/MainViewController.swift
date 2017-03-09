@@ -36,8 +36,10 @@ class MainViewController: UIViewController {
     func updateGoalIcons() {
         percentageSliderLabel.text = String(format: "%.2f", percentageSlider.value)
         goalView.progress = CGFloat(percentageSlider.value)
-        goalImageView.image = StyleKit.imageOfGoal(imageSize: goalView.frame.size,
-                                                   goalProgress: CGFloat(percentageSlider.value));
+        goalImageView.image = StyleKit.imageOfResizableGoal(
+            imageSize: goalView.frame.size,
+            resizableGoalProgress: CGFloat(percentageSlider.value)
+        )
     }
     
     func setDefaultValues() {

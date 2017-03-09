@@ -1,6 +1,6 @@
 //Form JS File
 function Performance_Performance_postshow_seq0(eventobject) {
-    Performance.goal01.base64 = StyleKitFFI.drawGoal(200, 258, 0.27);
+    Performance.goal01.base64 = StyleKitFFI.drawGoal(100, 129, 0.27);
     Performance.goal02.base64 = StyleKitFFI.drawGoal(100, 129, 0.6);
     Performance.goal03.base64 = StyleKitFFI.drawGoal(100, 129, 1);
     Performance.goal04.base64 = StyleKitFFI.drawGoal(100, 129, 1);

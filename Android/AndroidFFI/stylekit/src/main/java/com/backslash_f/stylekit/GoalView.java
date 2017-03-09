@@ -31,7 +31,9 @@ public class GoalView extends View {
         super.onDraw(canvas);
         StyleKit.drawGoal(
                 canvas,
-                getContext(), new RectF(0, 0, getWidth(), getHeight()),
+                getContext(),
+                new RectF(0, 0, getWidth(), getHeight()),
+                StyleKit.ResizingBehavior.AspectFit,
                 1.0f
         );
     }

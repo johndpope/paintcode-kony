@@ -4610,20 +4610,20 @@ GoalIcon.goal.base64 = goalIcon;</value>
                         <value>%</value>
                     </entry>
                 </propertyVsUnit>
-                <right>0</right>
+                <right>10</right>
                 <rowHeight>40</rowHeight>
                 <rowWidth>100</rowWidth>
-                <top>0</top>
+                <top>10</top>
                 <width>120</width>
-                <xlocation>330</xlocation>
-                <ylocation>0</ylocation>
+                <xlocation>320</xlocation>
+                <ylocation>10</ylocation>
                 <zOrder>1</zOrder>
             </flexConstraints>
             <widgetID>p2kwiet551288918887</widgetID>
             <createdGAVersion>6.5.0</createdGAVersion>
             <location>
-                <x>330</x>
-                <y>0</y>
+                <x>320</x>
+                <y>10</y>
             </location>
             <size>
                 <width>120</width>
