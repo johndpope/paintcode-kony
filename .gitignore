@@ -83,7 +83,6 @@ iOS/SwiftFFI/.DS_Store
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 *.zip
